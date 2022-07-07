@@ -51,4 +51,57 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Shrikhand", cursive;
 }
 
+a:visited {
+  color: inherit;
+}
+
+header {
+  text-align: center;
+}
+header .header__logo-wrapper {
+  padding: 25px 0 10px 0;
+  /*box-shadow: 10px 10px 50px rgba(50, 50, 50, 0.75);*/
+}
+header .header__area {
+  background: #EAEAEA;
+  padding: 20px 0;
+  font-weight: bold;
+  color: #565656;
+}
+header .header__area i {
+  margin-right: 10px;
+}
+header .header__cta-wrapper {
+  background: #F6F6F6;
+}
+header .header__cta-wrapper .header__cta {
+  padding: 40px 0;
+  width: 90%;
+  margin: auto;
+}
+header .header__cta-wrapper .header__cta h1 {
+  font-size: 1.2em;
+  line-height: 1.2em;
+  width: 80%;
+  margin: auto;
+}
+header .header__cta-wrapper .header__cta p {
+  color: #565656;
+  margin: 10px 0 25px 0;
+}
+header .header__cta-wrapper .header__cta .button {
+  width: 65%;
+  margin: auto;
+  padding: 12px 0px;
+  border-radius: 50px;
+  background-color: #9356DC;
+  background: linear-gradient(to left top, #9356DC 0%, #FF79DA 100%);
+  box-shadow: 1px 3px 6px rgba(50, 50, 50, 0.35);
+}
+header .header__cta-wrapper .header__cta .button a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.9em;
+}
+
 /*# sourceMappingURL=style.css.map */
