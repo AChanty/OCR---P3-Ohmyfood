@@ -64,7 +64,7 @@ header .header__logo-wrapper {
 }
 header .header__area {
   background: #EAEAEA;
-  padding: 20px 0;
+  padding: 15px 0;
   font-weight: bold;
   color: #565656;
 }
@@ -75,24 +75,26 @@ header .header__cta-wrapper {
   background: #F6F6F6;
 }
 header .header__cta-wrapper .header__cta {
-  padding: 40px 0;
+  padding: 40px 0 60px 0;
   width: 90%;
   margin: auto;
 }
 header .header__cta-wrapper .header__cta h1 {
-  font-size: 1.2em;
+  font-size: 1.5em;
   line-height: 1.2em;
   width: 80%;
   margin: auto;
 }
 header .header__cta-wrapper .header__cta p {
-  color: #565656;
-  margin: 10px 0 25px 0;
+  color: #7d7d7d;
+  margin: 10px 0 30px 0;
+  font-size: 1.05em;
 }
 header .header__cta-wrapper .header__cta .button {
-  width: 65%;
+  width: 70%;
+  max-width: 215px;
   margin: auto;
-  padding: 12px 0px;
+  padding: 15px 0px;
   border-radius: 50px;
   background-color: #9356DC;
   background: linear-gradient(to left top, #9356DC 0%, #FF79DA 100%);
@@ -101,7 +103,80 @@ header .header__cta-wrapper .header__cta .button {
 header .header__cta-wrapper .header__cta .button a {
   text-decoration: none;
   color: white;
-  font-size: 0.9em;
+  font-size: 1em;
+}
+
+.fonctionnement-wrapper {
+  padding: 40px 0 75px 0;
+}
+.fonctionnement-wrapper .fonctionnement {
+  width: 90%;
+  margin: auto;
+}
+.fonctionnement-wrapper .fonctionnement h2 {
+  font-size: 1.5em;
+  margin-bottom: 25px;
+}
+.fonctionnement-wrapper .fonctionnement .fonctionnement__steps__item {
+  background: #F6F6F6;
+  border-radius: 20px;
+  padding: 26px 0;
+  font-weight: bold;
+  box-shadow: 1px 6px 6px rgba(50, 50, 50, 0.1);
+  position: relative;
+}
+.fonctionnement-wrapper .fonctionnement .fonctionnement__steps__item:hover {
+  background: rgba(147, 86, 220, 0.1);
+}
+.fonctionnement-wrapper .fonctionnement .fonctionnement__steps__item:hover i {
+  color: #9356DC;
+}
+.fonctionnement-wrapper .fonctionnement .fonctionnement__steps__item:nth-child(2) {
+  margin: 25px 0;
+}
+.fonctionnement-wrapper .fonctionnement .fonctionnement__steps__item i {
+  color: #7d7d7d;
+  font-size: 1.2em;
+  margin: 0 35px;
+}
+.fonctionnement-wrapper .fonctionnement .fonctionnement__steps__item:nth-child(1):before {
+  content: "1";
+  text-align: center;
+  font-size: 0.8em;
+  padding: 5px;
+  height: 23px;
+  width: 23px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  color: white;
+  position: absolute;
+  left: -10px;
+}
+.fonctionnement-wrapper .fonctionnement .fonctionnement__steps__item:nth-child(2):before {
+  content: "2";
+  text-align: center;
+  font-size: 0.8em;
+  padding: 5px;
+  height: 23px;
+  width: 23px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  color: white;
+  position: absolute;
+  left: -10px;
+}
+.fonctionnement-wrapper .fonctionnement .fonctionnement__steps__item:nth-child(3):before {
+  content: "3";
+  text-align: center;
+  font-size: 0.8em;
+  padding: 5px;
+  height: 23px;
+  width: 23px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  color: white;
+  position: absolute;
+  left: -10px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,7 @@
 @import "libs/reset.scss";
 @import "utils/variables.scss";
 @import "utils/fonts.scss";
+@import "libs/mixins.scss";
 
 body {
     font-family: $texts;
@@ -24,7 +25,7 @@ header {
 
     .header__area {
         background: #EAEAEA;
-        padding: 20px 0;
+        padding: 15px 0;
         font-weight: bold;
         color: #565656;
 
@@ -37,26 +38,28 @@ header {
         background: #F6F6F6;
 
         .header__cta {
-        padding: 40px 0;
+        padding: 40px 0 60px 0;
         width: 90%;
         margin: auto;
 
         h1 {
-            font-size: 1.2em;
+            font-size: 1.5em;
             line-height: 1.2em;
             width: 80%;
             margin: auto;
         }
 
         p {
-            color: #565656;
-            margin: 10px 0 25px 0;
+            color: #7d7d7d;
+            margin: 10px 0 30px 0;
+            font-size: 1.05em;
         }
 
         .button {
-            width: 65%;
+            width: 70%;
+            max-width: 215px;
             margin: auto;
-            padding: 12px 0px;
+            padding: 15px 0px;
             border-radius: 50px;
             background-color: $color-primary;
             background: linear-gradient(to left top, $color-primary 0%, $color-secondary 100%);
@@ -64,9 +67,63 @@ header {
             a {
                 text-decoration: none;
                 color: white;
-                font-size: 0.9em;
+                font-size: 1em;
             }
         }
     }
+    }
+}
+
+.fonctionnement-wrapper {
+    padding: 40px 0 75px 0;
+
+    .fonctionnement {
+        width: 90%;
+        margin: auto;
+
+        h2 {
+            font-size: 1.5em;
+            margin-bottom: 25px;
+        }
+
+        .fonctionnement__steps__item {
+            background: #F6F6F6;
+            border-radius: 20px;
+            padding: 26px 0;
+            font-weight: bold;
+            box-shadow: 1px 6px 6px rgba(50, 50, 50, 0.1);
+            position: relative;
+
+            &:hover {
+                background: rgba(147,86,220,0.1);
+
+                i {
+                    color: $color-primary;
+                }
+            }
+
+            &:nth-child(2) {
+                margin: 25px 0;
+            }
+
+            i {
+                color: #7d7d7d;
+                font-size: 1.2em;
+                margin: 0 35px;
+            }
+
+            &:nth-child(1):before {
+                content: '1';
+                @include steps-number;
+            }
+            &:nth-child(2):before {
+                content: '2';
+                @include steps-number;
+            }
+            &:nth-child(3):before {
+                content: '3';
+                @include steps-number;
+            }
+        }
     }
 }

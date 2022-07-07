@@ -1,0 +1,12 @@
+@mixin steps-number {
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    background-color: $color-primary;
+    color: white;
+    position: absolute;
+    left: -10px;
+}
