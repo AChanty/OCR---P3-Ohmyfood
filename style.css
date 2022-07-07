@@ -75,7 +75,7 @@ header .header__cta-wrapper {
   background: #F6F6F6;
 }
 header .header__cta-wrapper .header__cta {
-  padding: 40px 0 60px 0;
+  padding: 40px 0 70px 0;
   width: 90%;
   margin: auto;
 }
@@ -87,23 +87,26 @@ header .header__cta-wrapper .header__cta h1 {
 }
 header .header__cta-wrapper .header__cta p {
   color: #7d7d7d;
-  margin: 10px 0 30px 0;
+  padding: 10px 0 45px 0;
   font-size: 1.05em;
 }
-header .header__cta-wrapper .header__cta .button {
+header .header__cta-wrapper .header__cta .header__cta__button {
+  text-decoration: none;
+  color: white;
   width: 70%;
   max-width: 215px;
   margin: auto;
-  padding: 15px 0px;
+  padding: 15px 20px;
   border-radius: 50px;
-  background-color: #9356DC;
   background: linear-gradient(to left top, #9356DC 0%, #FF79DA 100%);
   box-shadow: 1px 3px 6px rgba(50, 50, 50, 0.35);
 }
-header .header__cta-wrapper .header__cta .button a {
-  text-decoration: none;
-  color: white;
+header .header__cta-wrapper .header__cta .header__cta__button a {
   font-size: 1em;
+}
+header .header__cta-wrapper .header__cta .header__cta__button:hover {
+  opacity: 0.8;
+  box-shadow: 1px 3px 6px rgba(50, 50, 50, 0.7);
 }
 
 .fonctionnement-wrapper {
