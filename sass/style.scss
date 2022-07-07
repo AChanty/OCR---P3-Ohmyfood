@@ -87,6 +87,8 @@ header {
         }
 
         .fonctionnement__steps__item {
+            margin: auto;
+            max-width: 350px;
             background: #F6F6F6;
             border-radius: 20px;
             padding: 26px 0;
@@ -103,7 +105,7 @@ header {
             }
 
             &:nth-child(2) {
-                margin: 25px 0;
+                margin: 25px auto;
             }
 
             i {

@@ -118,6 +118,8 @@ header .header__cta-wrapper .header__cta .button a {
   margin-bottom: 25px;
 }
 .fonctionnement-wrapper .fonctionnement .fonctionnement__steps__item {
+  margin: auto;
+  max-width: 350px;
   background: #F6F6F6;
   border-radius: 20px;
   padding: 26px 0;
@@ -132,7 +134,7 @@ header .header__cta-wrapper .header__cta .button a {
   color: #9356DC;
 }
 .fonctionnement-wrapper .fonctionnement .fonctionnement__steps__item:nth-child(2) {
-  margin: 25px 0;
+  margin: 25px auto;
 }
 .fonctionnement-wrapper .fonctionnement .fonctionnement__steps__item i {
   color: #7d7d7d;
