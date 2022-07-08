@@ -384,6 +384,7 @@ header .header__cta-wrapper .header__cta .header__cta__button:hover {
   background-image: url("images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .restaurant-page-wrapper {
