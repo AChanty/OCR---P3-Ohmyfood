@@ -45,7 +45,6 @@ header {
 
         @include large-screen {
             padding: 26px 0;
-
         }
 
         i {
@@ -70,6 +69,10 @@ header {
             line-height: 1.2em;
             width: 80%;
             margin: auto;
+
+            @include large-screen {
+                font-size: 2em;
+            }
         }
 
         p {
@@ -131,6 +134,7 @@ header {
 
             @include large-screen {
                 margin-bottom: 50px;
+                font-size: 2em;
             }
         }
 
@@ -223,6 +227,7 @@ header {
 
             @include large-screen {
                 margin-bottom: 50px;
+                font-size: 2em;
             }
 
             @include medium-screen {
