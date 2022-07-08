@@ -72,6 +72,7 @@ header {
             border-radius: 50px;
             background: linear-gradient(to left top, $color-primary 0%, $color-secondary 100%);
             box-shadow: 1px 3px 6px rgba(50, 50, 50, 0.35);
+            transition: .3s;
             
             a {
                 font-size: 1em;
@@ -107,6 +108,7 @@ header {
             font-weight: bold;
             box-shadow: 1px 6px 6px rgba(50, 50, 50, 0.1);
             position: relative;
+            transition: .3s;
 
             &:hover {
                 background: rgba(147,86,220,0.1);
@@ -155,6 +157,11 @@ header {
             margin-bottom: 18px;
         }
 
+        .restaurants__item-wrapper {
+            max-width: 500px;
+            margin: auto;
+        }
+
         .restaurants__item {
             margin-bottom: 20px;
 
@@ -184,6 +191,7 @@ header {
                 padding: 15px;
                 border-radius: 0 0 15px 15px;
                 box-shadow: 4px 8px 20px rgba(50, 50, 50, 0.1);
+                margin-top: -4px;
 
                 p {
                     color: $color-quatenary;

@@ -107,6 +107,7 @@ header .header__cta-wrapper .header__cta .header__cta__button {
   border-radius: 50px;
   background: linear-gradient(to left top, #9356DC 0%, #FF79DA 100%);
   box-shadow: 1px 3px 6px rgba(50, 50, 50, 0.35);
+  transition: 0.3s;
 }
 header .header__cta-wrapper .header__cta .header__cta__button a {
   font-size: 1em;
@@ -136,6 +137,7 @@ header .header__cta-wrapper .header__cta .header__cta__button:hover {
   font-weight: bold;
   box-shadow: 1px 6px 6px rgba(50, 50, 50, 0.1);
   position: relative;
+  transition: 0.3s;
 }
 .fonctionnement-wrapper .fonctionnement .fonctionnement__steps__item:hover {
   background: rgba(147, 86, 220, 0.1);
@@ -203,6 +205,10 @@ header .header__cta-wrapper .header__cta .header__cta__button:hover {
   font-size: 1.5em;
   margin-bottom: 18px;
 }
+.restaurants-wrapper .restaurants .restaurants__item-wrapper {
+  max-width: 500px;
+  margin: auto;
+}
 .restaurants-wrapper .restaurants .restaurants__item {
   margin-bottom: 20px;
 }
@@ -230,6 +236,7 @@ header .header__cta-wrapper .header__cta .header__cta__button:hover {
   padding: 15px;
   border-radius: 0 0 15px 15px;
   box-shadow: 4px 8px 20px rgba(50, 50, 50, 0.1);
+  margin-top: -4px;
 }
 .restaurants-wrapper .restaurants .restaurants__item .restaurants__item__flex p {
   color: #7d7d7d;
