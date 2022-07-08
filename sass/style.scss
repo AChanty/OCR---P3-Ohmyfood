@@ -348,12 +348,9 @@ header {
     }
 }
 
-.header__restaurant-image {
-    height: 280px;
-    background-image: url('images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+.header__restaurant-image-note {
+    @include background-restaurant;
+    background-image: url('images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg');
 
     @include medium-screen {
         height: 350px;
@@ -362,7 +359,18 @@ header {
     @include large-screen {
         height: 400px;
     }
+}
+.header__restaurant-image-palette {
+    @include background-restaurant;
+    background-image: url('images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg');
 
+    @include medium-screen {
+        height: 350px;
+    }
+
+    @include large-screen {
+        height: 400px;
+    }
 }
 
 .restaurant-page-wrapper {

@@ -10,3 +10,10 @@
     position: absolute;
     left: -10px;
 }
+
+@mixin background-restaurant {
+    height: 280px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
