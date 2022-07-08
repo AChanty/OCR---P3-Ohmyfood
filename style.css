@@ -370,9 +370,12 @@ header .header__cta-wrapper .header__cta .header__cta__button:hover {
   display: flex;
   justify-content: center;
   padding: 15px 0;
+  position: relative;
 }
 .header__restaurant-wrapper i {
-  transform: translate(-335%, 20%);
+  position: absolute;
+  top: 20px;
+  left: 30px;
   font-size: 1.2em;
 }
 
