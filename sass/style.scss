@@ -389,6 +389,20 @@ header {
         background-attachment: fixed;
     }
 }
+.header__restaurant-image-delice {
+    @include background-restaurant;
+    background-image: url('images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg');
+
+    @include medium-screen {
+        height: 350px;
+    }
+
+    @include large-screen {
+        height: 400px;
+        background-position: bottom;
+        background-attachment: fixed;
+    }
+}
 
 .restaurant-page-wrapper {
     background: $background-variation;

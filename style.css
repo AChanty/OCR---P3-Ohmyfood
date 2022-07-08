@@ -458,6 +458,26 @@ header .header__cta-wrapper .header__cta .header__cta__button:hover {
   }
 }
 
+.header__restaurant-image-delice {
+  height: 280px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
+@media screen and (min-width: 768px) {
+  .header__restaurant-image-delice {
+    height: 350px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .header__restaurant-image-delice {
+    height: 400px;
+    background-position: bottom;
+    background-attachment: fixed;
+  }
+}
+
 .restaurant-page-wrapper {
   background: #F6F6F6;
   border-radius: 40px 40px 0 0;
