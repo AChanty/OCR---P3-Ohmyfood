@@ -26,6 +26,11 @@ header {
     .header__logo-wrapper {
         padding: 25px 0 10px 0;
         box-shadow: 1px 3px 10px rgba(50, 50, 50, 0.35);
+
+        @include large-screen {
+            padding: 50px 0 20px 0;
+        }
+
     }
 
     .header__area-wrapper {
@@ -37,6 +42,11 @@ header {
         padding: 13px 0;
         font-weight: bold;
         color: #565656;
+
+        @include large-screen {
+            padding: 26px 0;
+
+        }
 
         i {
             margin-right: 10px;
@@ -51,6 +61,10 @@ header {
         width: 90%;
         margin: auto;
 
+        @include large-screen {
+            padding: 80px 0 100px 0;
+        }
+
         h1 {
             font-size: 1.5em;
             line-height: 1.2em;
@@ -60,7 +74,7 @@ header {
 
         p {
             color: $color-quatenary;
-            padding: 10px 0 45px 0;
+            margin: 10px 0 45px 0;
             font-size: 1.05em;
         }
 
@@ -92,6 +106,10 @@ header {
 .fonctionnement-wrapper {
     padding: 40px 0 75px 0;
 
+    @include large-screen {
+        padding: 80px 0 100px 0;
+    }
+
     .fonctionnement {
         width: 90%;
         margin: auto;
@@ -99,6 +117,10 @@ header {
         h2 {
             font-size: 1.5em;
             margin-bottom: 25px;
+
+            @include large-screen {
+                margin-bottom: 50px;
+            }
 
             @include medium-screen {
                 text-align: center;
@@ -127,6 +149,9 @@ header {
                 width: 30%;
             }
 
+            @include large-screen {
+                max-width: none;
+            }
             
 
             &:hover {
@@ -183,6 +208,10 @@ header {
         h2 {
             font-size: 1.5em;
             margin-bottom: 25px;
+            
+            @include large-screen {
+                margin-bottom: 50px;
+            }
 
             @include medium-screen {
                 text-align: center;
@@ -198,6 +227,12 @@ header {
                 max-width: 75%;
             }
 
+            @include large-screen {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+
         }
 
         .restaurants__item {
@@ -205,6 +240,10 @@ header {
 
             @include medium-screen {
                 margin-bottom: 40px;
+            }
+
+            @include large-screen {
+                width: 48%;
             }
 
             img {

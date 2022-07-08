@@ -66,6 +66,11 @@ header .header__logo-wrapper {
   padding: 25px 0 10px 0;
   box-shadow: 1px 3px 10px rgba(50, 50, 50, 0.35);
 }
+@media screen and (min-width: 1366px) {
+  header .header__logo-wrapper {
+    padding: 50px 0 20px 0;
+  }
+}
 header .header__area-wrapper {
   margin-top: 5px; /* allows .header__logo-wrapper box-shadow */
 }
@@ -74,6 +79,11 @@ header .header__area {
   padding: 13px 0;
   font-weight: bold;
   color: #565656;
+}
+@media screen and (min-width: 1366px) {
+  header .header__area {
+    padding: 26px 0;
+  }
 }
 header .header__area i {
   margin-right: 10px;
@@ -86,6 +96,11 @@ header .header__cta-wrapper .header__cta {
   width: 90%;
   margin: auto;
 }
+@media screen and (min-width: 1366px) {
+  header .header__cta-wrapper .header__cta {
+    padding: 80px 0 100px 0;
+  }
+}
 header .header__cta-wrapper .header__cta h1 {
   font-size: 1.5em;
   line-height: 1.2em;
@@ -94,7 +109,7 @@ header .header__cta-wrapper .header__cta h1 {
 }
 header .header__cta-wrapper .header__cta p {
   color: #7d7d7d;
-  padding: 10px 0 45px 0;
+  margin: 10px 0 45px 0;
   font-size: 1.05em;
 }
 header .header__cta-wrapper .header__cta .header__cta__button {
@@ -120,6 +135,11 @@ header .header__cta-wrapper .header__cta .header__cta__button:hover {
 .fonctionnement-wrapper {
   padding: 40px 0 75px 0;
 }
+@media screen and (min-width: 1366px) {
+  .fonctionnement-wrapper {
+    padding: 80px 0 100px 0;
+  }
+}
 .fonctionnement-wrapper .fonctionnement {
   width: 90%;
   margin: auto;
@@ -127,6 +147,11 @@ header .header__cta-wrapper .header__cta .header__cta__button:hover {
 .fonctionnement-wrapper .fonctionnement h2 {
   font-size: 1.5em;
   margin-bottom: 25px;
+}
+@media screen and (min-width: 1366px) {
+  .fonctionnement-wrapper .fonctionnement h2 {
+    margin-bottom: 50px;
+  }
 }
 @media screen and (min-width: 768px) {
   .fonctionnement-wrapper .fonctionnement h2 {
@@ -153,6 +178,11 @@ header .header__cta-wrapper .header__cta .header__cta__button:hover {
 @media screen and (min-width: 768px) {
   .fonctionnement-wrapper .fonctionnement .fonctionnement__steps__item {
     width: 30%;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .fonctionnement-wrapper .fonctionnement .fonctionnement__steps__item {
+    max-width: none;
   }
 }
 .fonctionnement-wrapper .fonctionnement .fonctionnement__steps__item:hover {
@@ -232,6 +262,11 @@ header .header__cta-wrapper .header__cta .header__cta__button:hover {
   font-size: 1.5em;
   margin-bottom: 25px;
 }
+@media screen and (min-width: 1366px) {
+  .restaurants-wrapper .restaurants h2 {
+    margin-bottom: 50px;
+  }
+}
 @media screen and (min-width: 768px) {
   .restaurants-wrapper .restaurants h2 {
     text-align: center;
@@ -246,12 +281,24 @@ header .header__cta-wrapper .header__cta .header__cta__button:hover {
     max-width: 75%;
   }
 }
+@media screen and (min-width: 1366px) {
+  .restaurants-wrapper .restaurants .restaurants__item-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
 .restaurants-wrapper .restaurants .restaurants__item {
   margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
   .restaurants-wrapper .restaurants .restaurants__item {
     margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .restaurants-wrapper .restaurants .restaurants__item {
+    width: 48%;
   }
 }
 .restaurants-wrapper .restaurants .restaurants__item img {
