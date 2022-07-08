@@ -410,18 +410,18 @@ header {
 
         .restaurant-page__label-wrapper {
             margin-bottom: 20px;
+
+            span::before {
+                content: ' ';
+                height: 3px;
+                width: 40px;
+                background-color: $color-tertiary;
+                position: absolute;
+                }
         }
 
         .restaurant-page__label {
             margin-bottom: 3px;
-        }
-
-        span::before {
-        content: ' ';
-        height: 3px;
-        width: 40px;
-        background-color: $color-tertiary;
-        position: absolute;
         }
 
         .restaurant-page__plates-wrapper {
@@ -429,7 +429,7 @@ header {
 
                 @include large-screen {
                     margin-top: 30px;
-            }
+                }
         }
 
         &__plate {
@@ -439,10 +439,16 @@ header {
             box-shadow: 1px 6px 6px rgba(50, 50, 50, 0.1);
             margin-bottom: 15px;
 
+            @include medium-screen {
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 660px;
+            }
+
             @include large-screen {
                 margin-bottom: 30px;
                 padding: 20px 15px 20px 25px;
-        }
+            }
         }
 
         .restaurant-page__plate-name {
