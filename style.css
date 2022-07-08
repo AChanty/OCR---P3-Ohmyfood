@@ -128,6 +128,17 @@ header .header__cta-wrapper .header__cta .header__cta__button:hover {
   font-size: 1.5em;
   margin-bottom: 25px;
 }
+@media screen and (min-width: 768px) {
+  .fonctionnement-wrapper .fonctionnement h2 {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .fonctionnement-wrapper .fonctionnement .fonctionnement__steps {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
 .fonctionnement-wrapper .fonctionnement .fonctionnement__steps__item {
   margin: auto;
   max-width: 350px;
@@ -139,6 +150,11 @@ header .header__cta-wrapper .header__cta .header__cta__button:hover {
   position: relative;
   transition: 0.3s;
 }
+@media screen and (min-width: 768px) {
+  .fonctionnement-wrapper .fonctionnement .fonctionnement__steps__item {
+    width: 30%;
+  }
+}
 .fonctionnement-wrapper .fonctionnement .fonctionnement__steps__item:hover {
   background: rgba(147, 86, 220, 0.1);
 }
@@ -148,10 +164,21 @@ header .header__cta-wrapper .header__cta .header__cta__button:hover {
 .fonctionnement-wrapper .fonctionnement .fonctionnement__steps__item:nth-child(2) {
   margin: 25px auto;
 }
+@media screen and (min-width: 768px) {
+  .fonctionnement-wrapper .fonctionnement .fonctionnement__steps__item:nth-child(2) {
+    margin: 0;
+  }
+}
 .fonctionnement-wrapper .fonctionnement .fonctionnement__steps__item i {
   color: #7d7d7d;
   font-size: 1.2em;
   margin: 0 35px;
+}
+@media screen and (min-width: 768px) {
+  .fonctionnement-wrapper .fonctionnement .fonctionnement__steps__item i {
+    margin-left: 25px;
+    margin-right: 15px;
+  }
 }
 .fonctionnement-wrapper .fonctionnement .fonctionnement__steps__item:nth-child(1):before {
   content: "1";
@@ -203,14 +230,29 @@ header .header__cta-wrapper .header__cta .header__cta__button:hover {
 }
 .restaurants-wrapper .restaurants h2 {
   font-size: 1.5em;
-  margin-bottom: 18px;
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 768px) {
+  .restaurants-wrapper .restaurants h2 {
+    text-align: center;
+  }
 }
 .restaurants-wrapper .restaurants .restaurants__item-wrapper {
   max-width: 500px;
   margin: auto;
 }
+@media screen and (min-width: 768px) {
+  .restaurants-wrapper .restaurants .restaurants__item-wrapper {
+    max-width: 75%;
+  }
+}
 .restaurants-wrapper .restaurants .restaurants__item {
   margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .restaurants-wrapper .restaurants .restaurants__item {
+    margin-bottom: 40px;
+  }
 }
 .restaurants-wrapper .restaurants .restaurants__item img {
   border-radius: 15px 15px 0 0;
