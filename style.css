@@ -199,6 +199,11 @@ header .header__cta-wrapper .header__cta .header__cta__button:hover {
 .fonctionnement-wrapper .fonctionnement .fonctionnement__steps__item:hover {
   background: rgba(147, 86, 220, 0.1);
 }
+@media screen and (min-width: 1366px) {
+  .fonctionnement-wrapper .fonctionnement .fonctionnement__steps__item:hover {
+    transform: scale(1.03);
+  }
+}
 .fonctionnement-wrapper .fonctionnement .fonctionnement__steps__item:hover i {
   color: #9356DC;
 }
@@ -301,6 +306,7 @@ header .header__cta-wrapper .header__cta .header__cta__button:hover {
 }
 .restaurants-wrapper .restaurants .restaurants__item {
   margin-bottom: 20px;
+  transition: 0.3s;
 }
 @media screen and (min-width: 768px) {
   .restaurants-wrapper .restaurants .restaurants__item {
@@ -310,6 +316,11 @@ header .header__cta-wrapper .header__cta .header__cta__button:hover {
 @media screen and (min-width: 1366px) {
   .restaurants-wrapper .restaurants .restaurants__item {
     width: 48%;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .restaurants-wrapper .restaurants .restaurants__item:hover {
+    transform: scale(1.03);
   }
 }
 .restaurants-wrapper .restaurants .restaurants__item img {

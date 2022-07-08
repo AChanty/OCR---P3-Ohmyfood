@@ -165,6 +165,10 @@ header {
             &:hover {
                 background: rgba(147,86,220,0.1);
 
+                @include large-screen {
+                    transform: scale(1.03);
+                }
+
                 i {
                     color: $color-primary;
                 }
@@ -245,6 +249,7 @@ header {
 
         .restaurants__item {
             margin-bottom: 20px;
+            transition: .3s;
 
             @include medium-screen {
                 margin-bottom: 40px;
@@ -252,6 +257,12 @@ header {
 
             @include large-screen {
                 width: 48%;
+            }
+
+            &:hover {
+                @include large-screen {
+                    transform: scale(1.03);
+                }
             }
 
             img {
