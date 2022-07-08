@@ -11,10 +11,12 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $titles;
+    color: black;
 }
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 a:visited {
     color: inherit;
@@ -312,6 +314,17 @@ header {
     }
 }
 
+.header__restaurant-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+
+    i {
+        transform: translate(-335%, 20%);
+        font-size: 1.2em;
+    }
+}
+
 footer {
     background: #353535;
 
@@ -333,6 +346,10 @@ footer {
 
         li {
             line-height: 1.6em;
+
+            a {
+                color: white;
+            }
         }
 
         i {
