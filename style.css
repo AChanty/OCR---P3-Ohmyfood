@@ -144,18 +144,28 @@ header .header__cta-wrapper .header__cta .header__cta__button:hover {
   width: 90%;
   margin: auto;
 }
+@media screen and (min-width: 768px) {
+  .fonctionnement-wrapper .fonctionnement {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .fonctionnement-wrapper .fonctionnement {
+    width: 90%;
+  }
+}
 .fonctionnement-wrapper .fonctionnement h2 {
   font-size: 1.5em;
   margin-bottom: 25px;
 }
-@media screen and (min-width: 1366px) {
-  .fonctionnement-wrapper .fonctionnement h2 {
-    margin-bottom: 50px;
-  }
-}
 @media screen and (min-width: 768px) {
   .fonctionnement-wrapper .fonctionnement h2 {
     text-align: center;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .fonctionnement-wrapper .fonctionnement h2 {
+    margin-bottom: 50px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -177,12 +187,13 @@ header .header__cta-wrapper .header__cta .header__cta__button:hover {
 }
 @media screen and (min-width: 768px) {
   .fonctionnement-wrapper .fonctionnement .fonctionnement__steps__item {
-    width: 30%;
+    width: 31%;
   }
 }
 @media screen and (min-width: 1366px) {
   .fonctionnement-wrapper .fonctionnement .fonctionnement__steps__item {
     max-width: none;
+    width: 30%;
   }
 }
 .fonctionnement-wrapper .fonctionnement .fonctionnement__steps__item:hover {

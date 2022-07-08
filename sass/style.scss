@@ -114,16 +114,23 @@ header {
         width: 90%;
         margin: auto;
 
+        @include medium-screen {
+            width: 100%;
+        }
+        @include large-screen {
+            width: 90%;
+        }
+
         h2 {
             font-size: 1.5em;
             margin-bottom: 25px;
 
-            @include large-screen {
-                margin-bottom: 50px;
-            }
-
             @include medium-screen {
                 text-align: center;
+            }
+
+            @include large-screen {
+                margin-bottom: 50px;
             }
         }
 
@@ -146,11 +153,12 @@ header {
             transition: .3s;
 
             @include medium-screen {
-                width: 30%;
+                width: 31%;
             }
 
             @include large-screen {
                 max-width: none;
+                width: 30%;
             }
             
 
@@ -208,7 +216,7 @@ header {
         h2 {
             font-size: 1.5em;
             margin-bottom: 25px;
-            
+
             @include large-screen {
                 margin-bottom: 50px;
             }
