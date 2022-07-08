@@ -4,600 +4,600 @@
 @import "libs/mixins.scss";
 @import "libs/responsive.scss";
 
-
 body {
-    font-family: $texts;
+  font-family: $texts;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: $titles;
-    color: black;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $titles;
+  color: black;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 a:visited {
-    color: inherit;
+  color: inherit;
 }
 
 header {
-    text-align: center;
-    
-    .header__logo-wrapper {
-        padding: 25px 0 10px 0;
-        box-shadow: 1px 3px 10px rgba(50, 50, 50, 0.35);
+  text-align: center;
 
-        @include large-screen {
-            padding: 50px 0 20px 0;
-        }
-
-    }
-
-    .header__area-wrapper {
-        margin-top: 5px; /* allows .header__logo-wrapper box-shadow */
-    }
-
-    .header__area {
-        background: #EAEAEA;
-        padding: 13px 0;
-        font-weight: bold;
-        color: #565656;
-
-        @include large-screen {
-            padding: 26px 0;
-        }
-
-        i {
-            margin-right: 10px;
-        }
-    }
-    
-    .header__cta-wrapper {
-        background: $background-variation;
-
-        .header__cta {
-        padding: 40px 0 70px 0;
-        width: 90%;
-        margin: auto;
-
-        @include large-screen {
-            padding: 80px 0 100px 0;
-        }
-
-        h1 {
-            font-size: 1.5em;
-            line-height: 1.2em;
-            width: 80%;
-            margin: auto;
-
-            @include large-screen {
-                font-size: 2em;
-            }
-        }
-
-        p {
-            color: $color-quatenary;
-            margin: 10px 0 45px 0;
-            font-size: 1.05em;
-        }
-
-        .header__cta__button {
-            text-decoration: none;
-            color: white;
-            width: 70%;
-            max-width: 215px;
-            margin: auto;
-            padding: 15px 20px;
-            border-radius: 50px;
-            background: linear-gradient(to left top, $color-primary 0%, $color-secondary 100%);
-            box-shadow: 1px 3px 6px rgba(50, 50, 50, 0.35);
-            transition: .3s;
-            
-            a {
-                font-size: 1em;
-            }
-
-            &:hover {
-                opacity: 0.8;
-                box-shadow: 1px 3px 6px rgba(50, 50, 50, 0.70);
-            }
-        }
-    }
-    }
-}
-
-.fonctionnement-wrapper {
-    padding: 40px 0 75px 0;
+  .header__logo-wrapper {
+    padding: 25px 0 10px 0;
+    box-shadow: 1px 3px 10px rgba(50, 50, 50, 0.35);
 
     @include large-screen {
-        padding: 80px 0 100px 0;
+      padding: 50px 0 20px 0;
     }
+  }
 
-    .fonctionnement {
-        width: 90%;
-        margin: auto;
+  .header__area-wrapper {
+    margin-top: 5px; /* allows .header__logo-wrapper box-shadow */
+  }
 
-        @include medium-screen {
-            width: 100%;
-        }
-        @include large-screen {
-            width: 90%;
-        }
-
-        h2 {
-            font-size: 1.5em;
-            margin-bottom: 25px;
-
-            @include medium-screen {
-                text-align: center;
-            }
-
-            @include large-screen {
-                margin-bottom: 50px;
-                font-size: 2em;
-            }
-        }
-
-        .fonctionnement__steps {
-            @include medium-screen {
-                display: flex;
-                justify-content: space-evenly;
-            }
-        }
-
-        .fonctionnement__steps__item {
-            margin: auto;
-            max-width: 350px;
-            background: #F6F6F6;
-            border-radius: 20px;
-            padding: 26px 0;
-            font-weight: bold;
-            box-shadow: 1px 6px 6px rgba(50, 50, 50, 0.1);
-            position: relative;
-            transition: .3s;
-
-            @include medium-screen {
-                width: 31%;
-            }
-
-            @include large-screen {
-                max-width: none;
-                width: 30%;
-            }
-            
-
-            &:hover {
-                background: rgba(147,86,220,0.1);
-
-                @include large-screen {
-                    transform: scale(1.03);
-                }
-
-                i {
-                    color: $color-primary;
-                }
-            }
-
-            &:nth-child(2) {
-                margin: 25px auto;
-
-                @include medium-screen {
-                    margin: 0;
-                }
-            }
-
-            i {
-                color: $color-quatenary;
-                font-size: 1.2em;
-                margin: 0 35px;
-
-                @include medium-screen {
-                    margin-left: 25px;
-                    margin-right: 15px;
-                }
-            }
-
-            &:nth-child(1):before {
-                content: '1';
-                @include steps-number;
-            }
-            &:nth-child(2):before {
-                content: '2';
-                @include steps-number;
-            }
-            &:nth-child(3):before {
-                content: '3';
-                @include steps-number;
-            }
-        }
-    }
-}
-
-.restaurants-wrapper {
-    background: $background-variation;
-    padding: 50px 0;
-
-    .restaurants {
-        width: 90%;
-        margin: auto;
-
-        h2 {
-            font-size: 1.5em;
-            margin-bottom: 25px;
-
-            @include large-screen {
-                margin-bottom: 50px;
-                font-size: 2em;
-            }
-
-            @include medium-screen {
-                text-align: center;
-            }
-
-        }
-
-        .restaurants__item-wrapper {
-            max-width: 500px;
-            margin: auto;
-
-            @include medium-screen {
-                max-width: 75%;
-            }
-
-            @include large-screen {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-            }
-
-        }
-
-        .restaurants__item {
-            margin-bottom: 20px;
-            transition: .3s;
-
-            @include medium-screen {
-                margin-bottom: 40px;
-            }
-
-            @include large-screen {
-                width: 48%;
-            }
-
-            &:hover {
-                @include large-screen {
-                    transform: scale(1.03);
-                }
-            }
-
-            img {
-                border-radius: 15px 15px 0 0;
-                width: 100%;
-                height: 175px;
-                object-fit: cover;
-                position: relative;
-            }
-
-            span {
-                background-color: $color-tertiary;
-                color: #289077;
-                font-weight: bold;
-                font-size: 0.9em;
-                padding: 6px 12px;
-                position: absolute;
-                transform: translate(-120%, 50%);
-            }
-
-            .restaurants__item__flex {
-                background: white;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                padding: 15px;
-                border-radius: 0 0 15px 15px;
-                box-shadow: 4px 8px 20px rgba(50, 50, 50, 0.1);
-                margin-top: -4px;
-
-                p {
-                    color: $color-quatenary;
-                }
-
-                i {
-                    transform: scale(1.4, 1.7);
-                    color: $color-quatenary;
-                }
-
-                @include medium-screen {
-                    h3 {
-                        font-size: 1.1em;
-                    }
-                }
-                @include large-screen {
-                    h3 {
-                        font-size: 1.2em;
-                    }
-                }
-
-            }
-
-        }
-    }
-}
-
-.header__restaurant-wrapper {
-    display: flex;
-    justify-content: center;
-    padding: 15px 0;
-    position: relative;
+  .header__area {
+    background: #eaeaea;
+    padding: 13px 0;
+    font-weight: bold;
+    color: #565656;
 
     @include large-screen {
-        padding: 30px 0;
+      padding: 26px 0;
     }
 
     i {
-        position: absolute;
-        top: 20px;
-        left: 30px;
-        font-size: 1.2em;
+      margin-right: 10px;
+    }
+  }
+
+  .header__cta-wrapper {
+    background: $background-variation;
+
+    .header__cta {
+      padding: 40px 0 70px 0;
+      width: 90%;
+      margin: auto;
+
+      @include large-screen {
+        padding: 80px 0 100px 0;
+      }
+
+      h1 {
+        font-size: 1.5em;
+        line-height: 1.2em;
+        width: 80%;
+        margin: auto;
 
         @include large-screen {
-            top: 38px;
+          font-size: 2em;
         }
+      }
+
+      p {
+        color: $color-quatenary;
+        margin: 10px 0 45px 0;
+        font-size: 1.05em;
+      }
+
+      .header__cta__button {
+        text-decoration: none;
+        color: white;
+        width: 70%;
+        max-width: 215px;
+        margin: auto;
+        padding: 15px 20px;
+        border-radius: 50px;
+        background: linear-gradient(
+          to left top,
+          $color-primary 0%,
+          $color-secondary 100%
+        );
+        box-shadow: 1px 3px 6px rgba(50, 50, 50, 0.35);
+        transition: 0.3s;
+
+        a {
+          font-size: 1em;
+        }
+
+        &:hover {
+          opacity: 0.8;
+          box-shadow: 1px 3px 6px rgba(50, 50, 50, 0.7);
+        }
+      }
     }
+  }
+}
+
+.fonctionnement-wrapper {
+  padding: 40px 0 75px 0;
+
+  @include large-screen {
+    padding: 80px 0 100px 0;
+  }
+
+  .fonctionnement {
+    width: 90%;
+    margin: auto;
+
+    @include medium-screen {
+      width: 100%;
+    }
+    @include large-screen {
+      width: 90%;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 25px;
+
+      @include medium-screen {
+        text-align: center;
+      }
+
+      @include large-screen {
+        margin-bottom: 50px;
+        font-size: 2em;
+      }
+    }
+
+    .fonctionnement__steps {
+      @include medium-screen {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    }
+
+    .fonctionnement__steps__item {
+      margin: auto;
+      max-width: 350px;
+      background: #f6f6f6;
+      border-radius: 20px;
+      padding: 26px 0;
+      font-weight: bold;
+      box-shadow: 1px 6px 6px rgba(50, 50, 50, 0.1);
+      position: relative;
+      transition: 0.3s;
+
+      @include medium-screen {
+        width: 31%;
+      }
+
+      @include large-screen {
+        max-width: none;
+        width: 30%;
+      }
+
+      &:hover {
+        background: rgba(147, 86, 220, 0.1);
+
+        @include large-screen {
+          transform: scale(1.03);
+        }
+
+        i {
+          color: $color-primary;
+        }
+      }
+
+      &:nth-child(2) {
+        margin: 25px auto;
+
+        @include medium-screen {
+          margin: 0;
+        }
+      }
+
+      i {
+        color: $color-quatenary;
+        font-size: 1.2em;
+        margin: 0 35px;
+
+        @include medium-screen {
+          margin-left: 25px;
+          margin-right: 15px;
+        }
+      }
+
+      &:nth-child(1):before {
+        content: "1";
+        @include steps-number;
+      }
+      &:nth-child(2):before {
+        content: "2";
+        @include steps-number;
+      }
+      &:nth-child(3):before {
+        content: "3";
+        @include steps-number;
+      }
+    }
+  }
+}
+
+.restaurants-wrapper {
+  background: $background-variation;
+  padding: 50px 0;
+
+  .restaurants {
+    width: 90%;
+    margin: auto;
+
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 25px;
+
+      @include large-screen {
+        margin-bottom: 50px;
+        font-size: 2em;
+      }
+
+      @include medium-screen {
+        text-align: center;
+      }
+    }
+
+    .restaurants__item-wrapper {
+      max-width: 500px;
+      margin: auto;
+
+      @include medium-screen {
+        max-width: 75%;
+      }
+
+      @include large-screen {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+    }
+
+    .restaurants__item {
+      margin-bottom: 20px;
+      transition: 0.3s;
+
+      @include medium-screen {
+        margin-bottom: 40px;
+      }
+
+      @include large-screen {
+        width: 48%;
+      }
+
+      &:hover {
+        @include large-screen {
+          transform: scale(1.03);
+        }
+      }
+
+      img {
+        border-radius: 15px 15px 0 0;
+        width: 100%;
+        height: 175px;
+        object-fit: cover;
+        position: relative;
+      }
+
+      span {
+        background-color: $color-tertiary;
+        color: #289077;
+        font-weight: bold;
+        font-size: 0.9em;
+        padding: 6px 12px;
+        position: absolute;
+        transform: translate(-120%, 50%);
+      }
+
+      .restaurants__item__flex {
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+        border-radius: 0 0 15px 15px;
+        box-shadow: 4px 8px 20px rgba(50, 50, 50, 0.1);
+        margin-top: -4px;
+
+        p {
+          color: $color-quatenary;
+        }
+
+        i {
+          transform: scale(1.4, 1.7);
+          color: $color-quatenary;
+        }
+
+        @include medium-screen {
+          h3 {
+            font-size: 1.1em;
+          }
+        }
+        @include large-screen {
+          h3 {
+            font-size: 1.2em;
+          }
+        }
+      }
+    }
+  }
+}
+
+.header__restaurant-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  position: relative;
+
+  @include large-screen {
+    padding: 30px 0;
+  }
+
+  i {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-size: 1.2em;
+
+    @include large-screen {
+      top: 38px;
+    }
+  }
 }
 
 .header__restaurant-image-note {
-    @include background-restaurant;
-    background-image: url('images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg');
+  @include background-restaurant;
+  background-image: url("images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
 
-    @include medium-screen {
-        height: 350px;
-    }
+  @include medium-screen {
+    height: 350px;
+  }
 
-    @include large-screen {
-        height: 400px;
-        background-attachment: fixed;
-    }
+  @include large-screen {
+    height: 400px;
+    background-attachment: fixed;
+  }
 }
 .header__restaurant-image-palette {
-    @include background-restaurant;
-    background-image: url('images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg');
+  @include background-restaurant;
+  background-image: url("images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
 
-    @include medium-screen {
-        height: 350px;
-    }
+  @include medium-screen {
+    height: 350px;
+  }
 
-    @include large-screen {
-        height: 400px;
-        background-position: bottom;
-        background-attachment: fixed;
-    }
+  @include large-screen {
+    height: 400px;
+    background-position: bottom;
+    background-attachment: fixed;
+  }
 }
 .header__restaurant-image-francaise {
-    @include background-restaurant;
-    background-image: url('images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg');
+  @include background-restaurant;
+  background-image: url("images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
 
-    @include medium-screen {
-        height: 350px;
-    }
+  @include medium-screen {
+    height: 350px;
+  }
 
-    @include large-screen {
-        height: 400px;
-        background-position: bottom;
-        background-attachment: fixed;
-    }
+  @include large-screen {
+    height: 400px;
+    background-position: bottom;
+    background-attachment: fixed;
+  }
 }
 .header__restaurant-image-delice {
-    @include background-restaurant;
-    background-image: url('images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg');
+  @include background-restaurant;
+  background-image: url("images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 
-    @include medium-screen {
-        height: 350px;
-    }
+  @include medium-screen {
+    height: 350px;
+  }
 
-    @include large-screen {
-        height: 400px;
-        background-position: bottom;
-        background-attachment: fixed;
-    }
+  @include large-screen {
+    height: 400px;
+    background-position: bottom;
+    background-attachment: fixed;
+  }
 }
 
 .restaurant-page-wrapper {
-    background: $background-variation;
-    border-radius: 40px 40px 0 0;
-    margin-top: -65px;
-    padding: 30px 0;
+  background: $background-variation;
+  border-radius: 40px 40px 0 0;
+  margin-top: -65px;
+  padding: 30px 0;
+
+  @include large-screen {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .restaurant-page {
+    width: 90%;
+    margin: auto;
+
+    .restaurant-page__menus-wrapper {
+      @include large-screen {
+        width: 30%;
+      }
+    }
 
     @include large-screen {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
+      .restaurant-page__flex {
+        display: flex;
+        justify-content: space-between;
+      }
     }
 
-    .restaurant-page {
-        width: 90%;
-        margin: auto;
+    &__label {
+      text-transform: uppercase;
+      line-height: 1.5em;
+    }
 
-        .restaurant-page__menus-wrapper {
-            @include large-screen {
-                width: 30%;
-            }
-        }
+    .restaurant-page__restaurant-name {
+      margin-bottom: 30px;
+      position: relative;
+
+      h1 {
+        font-size: 1.7em;
 
         @include large-screen {
-            .restaurant-page__flex {
-                display: flex;
-                justify-content: space-between;
-            }
+          font-size: 2em;
         }
-
-        &__label {
-            text-transform: uppercase;
-            line-height: 1.5em;
-        }
-
-        .restaurant-page__restaurant-name {
-        margin-bottom: 30px;
-        position: relative;
-
-        h1 {
-            font-size: 1.7em;
-
-            @include large-screen {
-                font-size: 2em;
-            }
-        }
-        i {
-            margin: auto;
-            color: $color-quatenary;
-            transform: scale(1.4, 1.7);
-            position: absolute;
-            right: 20px;
-            top: 27%;
-        }
-        }
-
-        .restaurant-page__label-wrapper {
-            margin-bottom: 20px;
-
-            span::before {
-                content: ' ';
-                height: 3px;
-                width: 40px;
-                background-color: $color-tertiary;
-                position: absolute;
-                }
-        }
-
-        .restaurant-page__label {
-            margin-bottom: 3px;
-        }
-
-        .restaurant-page__plates-wrapper {
-            margin-bottom: 30px;
-
-                @include large-screen {
-                    margin-top: 30px;
-                }
-        }
-
-        &__plate {
-            background-color: white;
-            padding: 11px 10px 11px 20px;
-            border-radius: 15px;
-            box-shadow: 1px 6px 6px rgba(50, 50, 50, 0.1);
-            margin-bottom: 15px;
-
-            @include medium-screen {
-                margin-left: auto;
-                margin-right: auto;
-                max-width: 660px;
-            }
-
-            @include large-screen {
-                margin-bottom: 30px;
-                padding: 20px 15px 20px 25px;
-            }
-        }
-
-        .restaurant-page__plate-name {
-            font-weight: bold;
-            font-size: 1.1em;
-            line-height: 1.5em;
-        }
-
-        .restaurant-page__plate-price-wrapper {
-            display: flex;
-            justify-content: space-between;
-            font-size: 0.9em;
-
-            .restaurant-page__plate-description {
-                color: $color-quatenary;
-            }
-
-            .restaurant-page__plate-price {
-                font-weight: bold;
-                margin-right: 10px;
-            }
-
-        }
-
-
-        .restaurant-page_button-wrapper {
-            text-align: center;
-            margin: 60px 0 50px 0;
-
-            @include large-screen {
-                margin-top: 30px;
-        }
-        }
-        .restaurant-page_button {
-            text-decoration: none;
-            color: white;
-            margin: auto;
-            width: 70%;
-            max-width: 215px;
-            border-radius: 50px;
-            background: linear-gradient(to top, $color-primary 0%, $color-secondary 100%);
-            box-shadow: 1px 3px 6px rgba(50, 50, 50, 0.35);
-            transition: .3s;
-            
-            padding: 15px 50px;
-
-            &:hover {
-                opacity: 0.8;
-                box-shadow: 1px 3px 6px rgba(50, 50, 50, 0.70);
-            }
-        }
-
+      }
+      i {
+        margin: auto;
+        color: $color-quatenary;
+        transform: scale(1.4, 1.7);
+        position: absolute;
+        right: 20px;
+        top: 27%;
+      }
     }
 
+    .restaurant-page__label-wrapper {
+      margin-bottom: 20px;
+
+      span::before {
+        content: " ";
+        height: 3px;
+        width: 40px;
+        background-color: $color-tertiary;
+        position: absolute;
+      }
+    }
+
+    .restaurant-page__label {
+      margin-bottom: 3px;
+    }
+
+    .restaurant-page__plates-wrapper {
+      margin-bottom: 30px;
+
+      @include large-screen {
+        margin-top: 30px;
+      }
+    }
+
+    &__plate {
+      background-color: white;
+      padding: 11px 10px 11px 20px;
+      border-radius: 15px;
+      box-shadow: 1px 6px 6px rgba(50, 50, 50, 0.1);
+      margin-bottom: 15px;
+
+      @include medium-screen {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 660px;
+      }
+
+      @include large-screen {
+        margin-bottom: 30px;
+        padding: 20px 15px 20px 25px;
+      }
+    }
+
+    .restaurant-page__plate-name {
+      font-weight: bold;
+      font-size: 1.1em;
+      line-height: 1.5em;
+    }
+
+    .restaurant-page__plate-price-wrapper {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9em;
+
+      .restaurant-page__plate-description {
+        color: $color-quatenary;
+      }
+
+      .restaurant-page__plate-price {
+        font-weight: bold;
+        margin-right: 10px;
+      }
+    }
+
+    .restaurant-page_button-wrapper {
+      text-align: center;
+      margin: 60px 0 50px 0;
+
+      @include large-screen {
+        margin-top: 30px;
+      }
+    }
+    .restaurant-page_button {
+      text-decoration: none;
+      color: white;
+      margin: auto;
+      width: 70%;
+      max-width: 215px;
+      border-radius: 50px;
+      background: linear-gradient(
+        to top,
+        $color-primary 0%,
+        $color-secondary 100%
+      );
+      box-shadow: 1px 3px 6px rgba(50, 50, 50, 0.35);
+      transition: 0.3s;
+
+      padding: 15px 50px;
+
+      &:hover {
+        opacity: 0.8;
+        box-shadow: 1px 3px 6px rgba(50, 50, 50, 0.7);
+      }
+    }
+  }
 }
 
 footer {
-    background: #353535;
+  background: #353535;
 
-    .footer__content {
-        width: 90%;
-        margin: auto;
-        color: white;
-        padding: 30px 0 45px 0;
+  .footer__content {
+    width: 90%;
+    margin: auto;
+    color: white;
+    padding: 30px 0 45px 0;
 
-        @include medium-screen {
-            width: 67%;
-        }
-
-        img {
-            max-width: 30%;
-            padding-bottom: 10px;
-            filter: invert(100%);
-        }
-
-        li {
-            line-height: 1.6em;
-
-            a {
-                color: white;
-            }
-        }
-
-        i {
-            font-size: 0.8em;
-        }
-
-        li:nth-child(1) {
-            i {
-                margin-right: 15px;
-            }
-        }
-        li:nth-child(2) {
-            i {
-                margin-right: 10px;
-            }
-        }
-
+    @include medium-screen {
+      width: 67%;
     }
 
+    img {
+      max-width: 30%;
+      padding-bottom: 10px;
+      filter: invert(100%);
+    }
+
+    li {
+      line-height: 1.6em;
+
+      a {
+        color: white;
+      }
+    }
+
+    i {
+      font-size: 0.8em;
+    }
+
+    li:nth-child(1) {
+      i {
+        margin-right: 15px;
+      }
+    }
+    li:nth-child(2) {
+      i {
+        margin-right: 10px;
+      }
+    }
+  }
 }

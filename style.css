@@ -47,7 +47,12 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Shrikhand", cursive;
   color: black;
 }
@@ -77,7 +82,7 @@ header .header__area-wrapper {
   margin-top: 5px; /* allows .header__logo-wrapper box-shadow */
 }
 header .header__area {
-  background: #EAEAEA;
+  background: #eaeaea;
   padding: 13px 0;
   font-weight: bold;
   color: #565656;
@@ -185,7 +190,7 @@ header .header__cta-wrapper .header__cta .header__cta__button:hover {
 .fonctionnement-wrapper .fonctionnement .fonctionnement__steps__item {
   margin: auto;
   max-width: 350px;
-  background: #F6F6F6;
+  background: #f6f6f6;
   border-radius: 20px;
   padding: 26px 0;
   font-weight: bold;
