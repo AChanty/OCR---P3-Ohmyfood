@@ -358,6 +358,7 @@ header {
 
     @include large-screen {
         height: 400px;
+        background-attachment: fixed;
     }
 }
 .header__restaurant-image-palette {
@@ -370,6 +371,22 @@ header {
 
     @include large-screen {
         height: 400px;
+        background-position: bottom;
+        background-attachment: fixed;
+    }
+}
+.header__restaurant-image-francaise {
+    @include background-restaurant;
+    background-image: url('images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg');
+
+    @include medium-screen {
+        height: 350px;
+    }
+
+    @include large-screen {
+        height: 400px;
+        background-position: bottom;
+        background-attachment: fixed;
     }
 }
 

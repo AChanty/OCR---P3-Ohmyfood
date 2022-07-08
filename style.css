@@ -414,6 +414,7 @@ header .header__cta-wrapper .header__cta .header__cta__button:hover {
 @media screen and (min-width: 1366px) {
   .header__restaurant-image-note {
     height: 400px;
+    background-attachment: fixed;
   }
 }
 
@@ -432,6 +433,28 @@ header .header__cta-wrapper .header__cta .header__cta__button:hover {
 @media screen and (min-width: 1366px) {
   .header__restaurant-image-palette {
     height: 400px;
+    background-position: bottom;
+    background-attachment: fixed;
+  }
+}
+
+.header__restaurant-image-francaise {
+  height: 280px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+@media screen and (min-width: 768px) {
+  .header__restaurant-image-francaise {
+    height: 350px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .header__restaurant-image-francaise {
+    height: 400px;
+    background-position: bottom;
+    background-attachment: fixed;
   }
 }
 
