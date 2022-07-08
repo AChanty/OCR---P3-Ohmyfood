@@ -320,11 +320,19 @@ header {
     padding: 15px 0;
     position: relative;
 
+    @include large-screen {
+        padding: 30px 0;
+    }
+
     i {
         position: absolute;
         top: 20px;
         left: 30px;
         font-size: 1.2em;
+
+        @include large-screen {
+            top: 38px;
+        }
     }
 }
 
@@ -334,6 +342,15 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
+    @include medium-screen {
+        height: 350px;
+    }
+
+    @include large-screen {
+        height: 400px;
+    }
+
 }
 
 .restaurant-page-wrapper {
@@ -342,9 +359,28 @@ header {
     margin-top: -65px;
     padding: 30px 0;
 
+    @include large-screen {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .restaurant-page {
         width: 90%;
         margin: auto;
+
+        .restaurant-page__menus-wrapper {
+            @include large-screen {
+                width: 30%;
+            }
+        }
+
+        @include large-screen {
+            .restaurant-page__flex {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
 
         &__label {
             text-transform: uppercase;
@@ -357,6 +393,10 @@ header {
 
         h1 {
             font-size: 1.7em;
+
+            @include large-screen {
+                font-size: 2em;
+            }
         }
         i {
             margin: auto;
@@ -386,14 +426,23 @@ header {
 
         .restaurant-page__plates-wrapper {
             margin-bottom: 30px;
+
+                @include large-screen {
+                    margin-top: 30px;
+            }
         }
 
         &__plate {
             background-color: white;
-            padding: 11px 10px;
+            padding: 11px 10px 11px 20px;
             border-radius: 15px;
             box-shadow: 1px 6px 6px rgba(50, 50, 50, 0.1);
             margin-bottom: 15px;
+
+            @include large-screen {
+                margin-bottom: 30px;
+                padding: 20px 15px 20px 25px;
+        }
         }
 
         .restaurant-page__plate-name {
@@ -422,6 +471,10 @@ header {
         .restaurant-page_button-wrapper {
             text-align: center;
             margin: 60px 0 50px 0;
+
+            @include large-screen {
+                margin-top: 30px;
+        }
         }
         .restaurant-page_button {
             text-decoration: none;
