@@ -325,6 +325,123 @@ header {
     }
 }
 
+.header__restaurant-image {
+    height: 280px;
+    background-image: url('images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.restaurant-page-wrapper {
+    background: $background-variation;
+    border-radius: 40px 40px 0 0;
+    margin-top: -65px;
+    padding: 30px 0;
+
+    .restaurant-page {
+        width: 90%;
+        margin: auto;
+
+        &__label {
+            text-transform: uppercase;
+            line-height: 1.5em;
+        }
+
+        .restaurant-page__restaurant-name {
+        margin-bottom: 30px;
+        position: relative;
+
+        h1 {
+            font-size: 1.7em;
+        }
+        i {
+            margin: auto;
+            color: $color-quatenary;
+            transform: scale(1.4, 1.7);
+            position: absolute;
+            right: 20px;
+            top: 27%;
+        }
+        }
+
+        .restaurant-page__label-wrapper {
+            margin-bottom: 20px;
+        }
+
+        .restaurant-page__label {
+            margin-bottom: 3px;
+        }
+
+        span::before {
+        content: ' ';
+        height: 3px;
+        width: 40px;
+        background-color: $color-tertiary;
+        position: absolute;
+        }
+
+        .restaurant-page__plates-wrapper {
+            margin-bottom: 30px;
+        }
+
+        &__plate {
+            background-color: white;
+            padding: 11px 10px;
+            border-radius: 15px;
+            box-shadow: 1px 6px 6px rgba(50, 50, 50, 0.1);
+            margin-bottom: 15px;
+        }
+
+        .restaurant-page__plate-name {
+            font-weight: bold;
+            font-size: 1.1em;
+            line-height: 1.5em;
+        }
+
+        .restaurant-page__plate-price-wrapper {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9em;
+
+            .restaurant-page__plate-description {
+                color: $color-quatenary;
+            }
+
+            .restaurant-page__plate-price {
+                font-weight: bold;
+                margin-right: 10px;
+            }
+
+        }
+
+
+        .restaurant-page_button-wrapper {
+            text-align: center;
+            margin: 60px 0 50px 0;
+        }
+        .restaurant-page_button {
+            text-decoration: none;
+            color: white;
+            margin: auto;
+            width: 70%;
+            max-width: 215px;
+            border-radius: 50px;
+            background: linear-gradient(to top, $color-primary 0%, $color-secondary 100%);
+            box-shadow: 1px 3px 6px rgba(50, 50, 50, 0.35);
+            transition: .3s;
+            
+            padding: 15px 50px;
+
+            &:hover {
+                opacity: 0.8;
+                box-shadow: 1px 3px 6px rgba(50, 50, 50, 0.70);
+            }
+        }
+
+    }
+
+}
+
 footer {
     background: #353535;
 
