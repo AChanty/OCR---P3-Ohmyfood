@@ -308,6 +308,18 @@ header {
                     transform: scale(1.4, 1.7);
                     color: $color-quatenary;
                 }
+
+                @include medium-screen {
+                    h3 {
+                        font-size: 1.1em;
+                    }
+                }
+                @include large-screen {
+                    h3 {
+                        font-size: 1.2em;
+                    }
+                }
+
             }
 
         }
