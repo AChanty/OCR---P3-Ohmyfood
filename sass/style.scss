@@ -486,13 +486,6 @@ a:visited {
         $color-secondary 100%
       );
     }
-    
-    &_button:hover {
-      background: linear-gradient(
-      to top,
-      lighten($color-primary, 5%) 0%,
-      lighten($color-secondary, 5%) 100%)
-    }
   }
 }
 

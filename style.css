@@ -141,8 +141,7 @@ a:visited {
   font-size: 1em;
 }
 .header__cta-wrapper .header__cta__button:hover {
-  /* opacity: 0.8; */
-  background: linear-gradient(to left top, #a16be0 0%, #ff93e1 100%);
+  opacity: 0.8;
   box-shadow: 1px 3px 6px rgba(50, 50, 50, 0.7);
 }
 
@@ -627,12 +626,8 @@ a:visited {
   font-size: 1em;
 }
 .restaurant-page-wrapper .restaurant-page_button:hover {
-  /* opacity: 0.8; */
-  background: linear-gradient(to left top, #a16be0 0%, #ff93e1 100%);
+  opacity: 0.8;
   box-shadow: 1px 3px 6px rgba(50, 50, 50, 0.7);
-}
-.restaurant-page-wrapper .restaurant-page_button:hover {
-  background: linear-gradient(to top, #a16be0 0%, #ff93e1 100%);
 }
 
 footer {
