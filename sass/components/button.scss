@@ -19,7 +19,12 @@
     }
   
     &:hover {
-        opacity: 0.8;
+       /* opacity: 0.8; */
+       background: linear-gradient(
+        to left top,
+        lighten($color-primary, 5%) 0%,
+        lighten($color-secondary, 5%) 100%
+       );
         box-shadow: 1px 3px 6px rgba(50, 50, 50, 0.7);
     }
 }

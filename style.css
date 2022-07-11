@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
 html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -140,7 +141,8 @@ a:visited {
   font-size: 1em;
 }
 .header__cta-wrapper .header__cta__button:hover {
-  opacity: 0.8;
+  /* opacity: 0.8; */
+  background: linear-gradient(to left top, #a16be0 0%, #ff93e1 100%);
   box-shadow: 1px 3px 6px rgba(50, 50, 50, 0.7);
 }
 
@@ -625,8 +627,12 @@ a:visited {
   font-size: 1em;
 }
 .restaurant-page-wrapper .restaurant-page_button:hover {
-  opacity: 0.8;
+  /* opacity: 0.8; */
+  background: linear-gradient(to left top, #a16be0 0%, #ff93e1 100%);
   box-shadow: 1px 3px 6px rgba(50, 50, 50, 0.7);
+}
+.restaurant-page-wrapper .restaurant-page_button:hover {
+  background: linear-gradient(to top, #a16be0 0%, #ff93e1 100%);
 }
 
 footer {
@@ -662,6 +668,72 @@ footer .footer__content li:nth-child(1) i {
 }
 footer .footer__content li:nth-child(2) i {
   margin-right: 10px;
+}
+
+/*.fa-heart {
+  transition: transform 450ms, color 300ms 150ms; // durée + delai
+    &:hover {
+    transform: scale(5, 3) !important;
+    transform: translate(100%, -50%) !important;
+    color: red !important;
+  }
+}*/
+.fa-heart:hover {
+  content: url(images/heart-solid.svg);
+  width: 16px;
+  transform: scale(1.4, 1.7);
+  cursor: pointer;
+  animation: heartgrow ease-in-out 0.3s;
+  transform-origin: center;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1.4, 1.7);
+  }
+  25% {
+    transform: scale(0.5, 0.5);
+  }
+  50% {
+    transform: scale(1.4, 1.7);
+  }
+  75% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1.4, 1.7);
+  }
+}
+@keyframes heartpop {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(0, 25%);
+  }
+  50% {
+    transform: translate 0, 50%;
+  }
+  75% {
+    transform: translate 0, 75%;
+  }
+  100% {
+    transform: translate 0, 100%;
+  }
+}
+@keyframes heartgrow {
+  0% {
+    transform: scale(0.5);
+  }
+  50% {
+    transform: scale(0.9, 1.1);
+  }
+  80% {
+    transform: scale(2, 2.3);
+  }
+  100% {
+    transform: scale(1.4, 1.7);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
