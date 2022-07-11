@@ -1,8 +1,9 @@
 @import "libs/reset.scss";
-@import "utils/variables.scss";
+@import "libs/variables.scss";
 @import "utils/fonts.scss";
 @import "libs/mixins.scss";
 @import "libs/responsive.scss";
+@import "components/button.scss";
 
 body {
   font-family: $texts;
@@ -26,10 +27,10 @@ a:visited {
   color: inherit;
 }
 
-header {
+.header {
   text-align: center;
 
-  .header__logo-wrapper {
+  &__logo-wrapper {
     padding: 25px 0 10px 0;
     box-shadow: 1px 3px 10px rgba(50, 50, 50, 0.35);
 
@@ -38,11 +39,11 @@ header {
     }
   }
 
-  .header__area-wrapper {
+  &__area-wrapper {
     margin-top: 5px; /* allows .header__logo-wrapper box-shadow */
   }
 
-  .header__area {
+  &__area {
     background: #eaeaea;
     padding: 13px 0;
     font-weight: bold;
@@ -57,7 +58,7 @@ header {
     }
   }
 
-  .header__cta-wrapper {
+  &__cta-wrapper {
     background: $background-variation;
 
     .header__cta {
@@ -86,31 +87,9 @@ header {
         font-size: 1.05em;
       }
 
-      .header__cta__button {
-        text-decoration: none;
-        color: white;
-        width: 70%;
-        max-width: 215px;
-        margin: auto;
-        padding: 15px 20px;
-        border-radius: 50px;
-        background: linear-gradient(
-          to left top,
-          $color-primary 0%,
-          $color-secondary 100%
-        );
-        box-shadow: 1px 3px 6px rgba(50, 50, 50, 0.35);
-        transition: 0.3s;
-
-        a {
-          font-size: 1em;
-        }
-
-        &:hover {
-          opacity: 0.8;
-          box-shadow: 1px 3px 6px rgba(50, 50, 50, 0.7);
-        }
-      }
+      &__button {
+      @include button;
+    }
     }
   }
 }
@@ -147,14 +126,14 @@ header {
       }
     }
 
-    .fonctionnement__steps {
+    &__steps {
       @include medium-screen {
         display: flex;
         justify-content: space-evenly;
       }
     }
 
-    .fonctionnement__steps__item {
+    &__steps__item {
       margin: auto;
       max-width: 350px;
       background: #f6f6f6;
@@ -243,7 +222,7 @@ header {
       }
     }
 
-    .restaurants__item-wrapper {
+    &__item-wrapper {
       max-width: 500px;
       margin: auto;
 
@@ -258,7 +237,7 @@ header {
       }
     }
 
-    .restaurants__item {
+    &__item {
       margin-bottom: 20px;
       transition: 0.3s;
 
@@ -294,7 +273,7 @@ header {
         transform: translate(-120%, 50%);
       }
 
-      .restaurants__item__flex {
+      &__flex {
         background: white;
         display: flex;
         align-items: center;
@@ -422,14 +401,14 @@ header {
     width: 90%;
     margin: auto;
 
-    .restaurant-page__menus-wrapper {
+    &__menus-wrapper {
       @include large-screen {
         width: 30%;
       }
     }
 
     @include large-screen {
-      .restaurant-page__flex {
+      &__flex {
         display: flex;
         justify-content: space-between;
       }
@@ -440,7 +419,7 @@ header {
       line-height: 1.5em;
     }
 
-    .restaurant-page__restaurant-name {
+    &__restaurant-name {
       margin-bottom: 30px;
       position: relative;
 
@@ -461,7 +440,7 @@ header {
       }
     }
 
-    .restaurant-page__label-wrapper {
+    &__label-wrapper {
       margin-bottom: 20px;
 
       span::before {
@@ -473,11 +452,11 @@ header {
       }
     }
 
-    .restaurant-page__label {
+    &__label {
       margin-bottom: 3px;
     }
 
-    .restaurant-page__plates-wrapper {
+    &__plates-wrapper {
       margin-bottom: 30px;
 
       @include large-screen {
@@ -504,13 +483,13 @@ header {
       }
     }
 
-    .restaurant-page__plate-name {
+    &__plate-name {
       font-weight: bold;
       font-size: 1.1em;
       line-height: 1.5em;
     }
 
-    .restaurant-page__plate-price-wrapper {
+    &__plate-price-wrapper {
       display: flex;
       justify-content: space-between;
       font-size: 0.9em;
@@ -525,7 +504,7 @@ header {
       }
     }
 
-    .restaurant-page_button-wrapper {
+    &_button-wrapper {
       text-align: center;
       margin: 60px 0 50px 0;
 
@@ -533,27 +512,14 @@ header {
         margin-top: 30px;
       }
     }
-    .restaurant-page_button {
-      text-decoration: none;
-      color: white;
-      margin: auto;
-      width: 70%;
-      max-width: 215px;
-      border-radius: 50px;
-      background: linear-gradient(
+
+    &_button {
+    @include button;
+    background: linear-gradient(
         to top,
         $color-primary 0%,
         $color-secondary 100%
       );
-      box-shadow: 1px 3px 6px rgba(50, 50, 50, 0.35);
-      transition: 0.3s;
-
-      padding: 15px 50px;
-
-      &:hover {
-        opacity: 0.8;
-        box-shadow: 1px 3px 6px rgba(50, 50, 50, 0.7);
-      }
     }
   }
 }

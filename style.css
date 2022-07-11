@@ -66,65 +66,65 @@ a:visited {
   color: inherit;
 }
 
-header {
+.header {
   text-align: center;
 }
-header .header__logo-wrapper {
+.header__logo-wrapper {
   padding: 25px 0 10px 0;
   box-shadow: 1px 3px 10px rgba(50, 50, 50, 0.35);
 }
 @media screen and (min-width: 1366px) {
-  header .header__logo-wrapper {
+  .header__logo-wrapper {
     padding: 50px 0 20px 0;
   }
 }
-header .header__area-wrapper {
+.header__area-wrapper {
   margin-top: 5px; /* allows .header__logo-wrapper box-shadow */
 }
-header .header__area {
+.header__area {
   background: #eaeaea;
   padding: 13px 0;
   font-weight: bold;
   color: #565656;
 }
 @media screen and (min-width: 1366px) {
-  header .header__area {
+  .header__area {
     padding: 26px 0;
   }
 }
-header .header__area i {
+.header__area i {
   margin-right: 10px;
 }
-header .header__cta-wrapper {
+.header__cta-wrapper {
   background: #F6F6F6;
 }
-header .header__cta-wrapper .header__cta {
+.header__cta-wrapper .header__cta {
   padding: 40px 0 70px 0;
   width: 90%;
   margin: auto;
 }
 @media screen and (min-width: 1366px) {
-  header .header__cta-wrapper .header__cta {
+  .header__cta-wrapper .header__cta {
     padding: 80px 0 100px 0;
   }
 }
-header .header__cta-wrapper .header__cta h1 {
+.header__cta-wrapper .header__cta h1 {
   font-size: 1.5em;
   line-height: 1.2em;
   width: 80%;
   margin: auto;
 }
 @media screen and (min-width: 1366px) {
-  header .header__cta-wrapper .header__cta h1 {
+  .header__cta-wrapper .header__cta h1 {
     font-size: 2em;
   }
 }
-header .header__cta-wrapper .header__cta p {
+.header__cta-wrapper .header__cta p {
   color: #7d7d7d;
   margin: 10px 0 45px 0;
   font-size: 1.05em;
 }
-header .header__cta-wrapper .header__cta .header__cta__button {
+.header__cta-wrapper .header__cta__button {
   text-decoration: none;
   color: white;
   width: 70%;
@@ -136,10 +136,10 @@ header .header__cta-wrapper .header__cta .header__cta__button {
   box-shadow: 1px 3px 6px rgba(50, 50, 50, 0.35);
   transition: 0.3s;
 }
-header .header__cta-wrapper .header__cta .header__cta__button a {
+.header__cta-wrapper .header__cta__button a {
   font-size: 1em;
 }
-header .header__cta-wrapper .header__cta .header__cta__button:hover {
+.header__cta-wrapper .header__cta__button:hover {
   opacity: 0.8;
   box-shadow: 1px 3px 6px rgba(50, 50, 50, 0.7);
 }
@@ -182,12 +182,12 @@ header .header__cta-wrapper .header__cta .header__cta__button:hover {
   }
 }
 @media screen and (min-width: 768px) {
-  .fonctionnement-wrapper .fonctionnement .fonctionnement__steps {
+  .fonctionnement-wrapper .fonctionnement__steps {
     display: flex;
     justify-content: space-evenly;
   }
 }
-.fonctionnement-wrapper .fonctionnement .fonctionnement__steps__item {
+.fonctionnement-wrapper .fonctionnement__steps__item {
   margin: auto;
   max-width: 350px;
   background: #f6f6f6;
@@ -199,47 +199,47 @@ header .header__cta-wrapper .header__cta .header__cta__button:hover {
   transition: 0.3s;
 }
 @media screen and (min-width: 768px) {
-  .fonctionnement-wrapper .fonctionnement .fonctionnement__steps__item {
+  .fonctionnement-wrapper .fonctionnement__steps__item {
     width: 31%;
   }
 }
 @media screen and (min-width: 1366px) {
-  .fonctionnement-wrapper .fonctionnement .fonctionnement__steps__item {
+  .fonctionnement-wrapper .fonctionnement__steps__item {
     max-width: none;
     width: 30%;
   }
 }
-.fonctionnement-wrapper .fonctionnement .fonctionnement__steps__item:hover {
+.fonctionnement-wrapper .fonctionnement__steps__item:hover {
   background: rgba(147, 86, 220, 0.1);
 }
 @media screen and (min-width: 1366px) {
-  .fonctionnement-wrapper .fonctionnement .fonctionnement__steps__item:hover {
+  .fonctionnement-wrapper .fonctionnement__steps__item:hover {
     transform: scale(1.03);
   }
 }
-.fonctionnement-wrapper .fonctionnement .fonctionnement__steps__item:hover i {
+.fonctionnement-wrapper .fonctionnement__steps__item:hover i {
   color: #9356DC;
 }
-.fonctionnement-wrapper .fonctionnement .fonctionnement__steps__item:nth-child(2) {
+.fonctionnement-wrapper .fonctionnement__steps__item:nth-child(2) {
   margin: 25px auto;
 }
 @media screen and (min-width: 768px) {
-  .fonctionnement-wrapper .fonctionnement .fonctionnement__steps__item:nth-child(2) {
+  .fonctionnement-wrapper .fonctionnement__steps__item:nth-child(2) {
     margin: 0;
   }
 }
-.fonctionnement-wrapper .fonctionnement .fonctionnement__steps__item i {
+.fonctionnement-wrapper .fonctionnement__steps__item i {
   color: #7d7d7d;
   font-size: 1.2em;
   margin: 0 35px;
 }
 @media screen and (min-width: 768px) {
-  .fonctionnement-wrapper .fonctionnement .fonctionnement__steps__item i {
+  .fonctionnement-wrapper .fonctionnement__steps__item i {
     margin-left: 25px;
     margin-right: 15px;
   }
 }
-.fonctionnement-wrapper .fonctionnement .fonctionnement__steps__item:nth-child(1):before {
+.fonctionnement-wrapper .fonctionnement__steps__item:nth-child(1):before {
   content: "1";
   text-align: center;
   font-size: 0.8em;
@@ -252,7 +252,7 @@ header .header__cta-wrapper .header__cta .header__cta__button:hover {
   position: absolute;
   left: -10px;
 }
-.fonctionnement-wrapper .fonctionnement .fonctionnement__steps__item:nth-child(2):before {
+.fonctionnement-wrapper .fonctionnement__steps__item:nth-child(2):before {
   content: "2";
   text-align: center;
   font-size: 0.8em;
@@ -265,7 +265,7 @@ header .header__cta-wrapper .header__cta .header__cta__button:hover {
   position: absolute;
   left: -10px;
 }
-.fonctionnement-wrapper .fonctionnement .fonctionnement__steps__item:nth-child(3):before {
+.fonctionnement-wrapper .fonctionnement__steps__item:nth-child(3):before {
   content: "3";
   text-align: center;
   font-size: 0.8em;
@@ -302,49 +302,49 @@ header .header__cta-wrapper .header__cta .header__cta__button:hover {
     text-align: center;
   }
 }
-.restaurants-wrapper .restaurants .restaurants__item-wrapper {
+.restaurants-wrapper .restaurants__item-wrapper {
   max-width: 500px;
   margin: auto;
 }
 @media screen and (min-width: 768px) {
-  .restaurants-wrapper .restaurants .restaurants__item-wrapper {
+  .restaurants-wrapper .restaurants__item-wrapper {
     max-width: 75%;
   }
 }
 @media screen and (min-width: 1366px) {
-  .restaurants-wrapper .restaurants .restaurants__item-wrapper {
+  .restaurants-wrapper .restaurants__item-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 }
-.restaurants-wrapper .restaurants .restaurants__item {
+.restaurants-wrapper .restaurants__item {
   margin-bottom: 20px;
   transition: 0.3s;
 }
 @media screen and (min-width: 768px) {
-  .restaurants-wrapper .restaurants .restaurants__item {
+  .restaurants-wrapper .restaurants__item {
     margin-bottom: 40px;
   }
 }
 @media screen and (min-width: 1366px) {
-  .restaurants-wrapper .restaurants .restaurants__item {
+  .restaurants-wrapper .restaurants__item {
     width: 48%;
   }
 }
 @media screen and (min-width: 1366px) {
-  .restaurants-wrapper .restaurants .restaurants__item:hover {
+  .restaurants-wrapper .restaurants__item:hover {
     transform: scale(1.03);
   }
 }
-.restaurants-wrapper .restaurants .restaurants__item img {
+.restaurants-wrapper .restaurants__item img {
   border-radius: 15px 15px 0 0;
   width: 100%;
   height: 175px;
   object-fit: cover;
   position: relative;
 }
-.restaurants-wrapper .restaurants .restaurants__item span {
+.restaurants-wrapper .restaurants__item span {
   background-color: #99E2D0;
   color: #289077;
   font-weight: bold;
@@ -353,7 +353,7 @@ header .header__cta-wrapper .header__cta .header__cta__button:hover {
   position: absolute;
   transform: translate(-120%, 50%);
 }
-.restaurants-wrapper .restaurants .restaurants__item .restaurants__item__flex {
+.restaurants-wrapper .restaurants__item__flex {
   background: white;
   display: flex;
   align-items: center;
@@ -363,20 +363,20 @@ header .header__cta-wrapper .header__cta .header__cta__button:hover {
   box-shadow: 4px 8px 20px rgba(50, 50, 50, 0.1);
   margin-top: -4px;
 }
-.restaurants-wrapper .restaurants .restaurants__item .restaurants__item__flex p {
+.restaurants-wrapper .restaurants__item__flex p {
   color: #7d7d7d;
 }
-.restaurants-wrapper .restaurants .restaurants__item .restaurants__item__flex i {
+.restaurants-wrapper .restaurants__item__flex i {
   transform: scale(1.4, 1.7);
   color: #7d7d7d;
 }
 @media screen and (min-width: 768px) {
-  .restaurants-wrapper .restaurants .restaurants__item .restaurants__item__flex h3 {
+  .restaurants-wrapper .restaurants__item__flex h3 {
     font-size: 1.1em;
   }
 }
 @media screen and (min-width: 1366px) {
-  .restaurants-wrapper .restaurants .restaurants__item .restaurants__item__flex h3 {
+  .restaurants-wrapper .restaurants__item__flex h3 {
     font-size: 1.2em;
   }
 }
@@ -501,12 +501,12 @@ header .header__cta-wrapper .header__cta .header__cta__button:hover {
   margin: auto;
 }
 @media screen and (min-width: 1366px) {
-  .restaurant-page-wrapper .restaurant-page .restaurant-page__menus-wrapper {
+  .restaurant-page-wrapper .restaurant-page__menus-wrapper {
     width: 30%;
   }
 }
 @media screen and (min-width: 1366px) {
-  .restaurant-page-wrapper .restaurant-page .restaurant-page__flex {
+  .restaurant-page-wrapper .restaurant-page__flex {
     display: flex;
     justify-content: space-between;
   }
@@ -515,19 +515,19 @@ header .header__cta-wrapper .header__cta .header__cta__button:hover {
   text-transform: uppercase;
   line-height: 1.5em;
 }
-.restaurant-page-wrapper .restaurant-page .restaurant-page__restaurant-name {
+.restaurant-page-wrapper .restaurant-page__restaurant-name {
   margin-bottom: 30px;
   position: relative;
 }
-.restaurant-page-wrapper .restaurant-page .restaurant-page__restaurant-name h1 {
+.restaurant-page-wrapper .restaurant-page__restaurant-name h1 {
   font-size: 1.7em;
 }
 @media screen and (min-width: 1366px) {
-  .restaurant-page-wrapper .restaurant-page .restaurant-page__restaurant-name h1 {
+  .restaurant-page-wrapper .restaurant-page__restaurant-name h1 {
     font-size: 2em;
   }
 }
-.restaurant-page-wrapper .restaurant-page .restaurant-page__restaurant-name i {
+.restaurant-page-wrapper .restaurant-page__restaurant-name i {
   margin: auto;
   color: #7d7d7d;
   transform: scale(1.4, 1.7);
@@ -535,24 +535,24 @@ header .header__cta-wrapper .header__cta .header__cta__button:hover {
   right: 20px;
   top: 27%;
 }
-.restaurant-page-wrapper .restaurant-page .restaurant-page__label-wrapper {
+.restaurant-page-wrapper .restaurant-page__label-wrapper {
   margin-bottom: 20px;
 }
-.restaurant-page-wrapper .restaurant-page .restaurant-page__label-wrapper span::before {
+.restaurant-page-wrapper .restaurant-page__label-wrapper span::before {
   content: " ";
   height: 3px;
   width: 40px;
   background-color: #99E2D0;
   position: absolute;
 }
-.restaurant-page-wrapper .restaurant-page .restaurant-page__label {
+.restaurant-page-wrapper .restaurant-page__label {
   margin-bottom: 3px;
 }
-.restaurant-page-wrapper .restaurant-page .restaurant-page__plates-wrapper {
+.restaurant-page-wrapper .restaurant-page__plates-wrapper {
   margin-bottom: 30px;
 }
 @media screen and (min-width: 1366px) {
-  .restaurant-page-wrapper .restaurant-page .restaurant-page__plates-wrapper {
+  .restaurant-page-wrapper .restaurant-page__plates-wrapper {
     margin-top: 30px;
   }
 }
@@ -576,45 +576,49 @@ header .header__cta-wrapper .header__cta .header__cta__button:hover {
     padding: 20px 15px 20px 25px;
   }
 }
-.restaurant-page-wrapper .restaurant-page .restaurant-page__plate-name {
+.restaurant-page-wrapper .restaurant-page__plate-name {
   font-weight: bold;
   font-size: 1.1em;
   line-height: 1.5em;
 }
-.restaurant-page-wrapper .restaurant-page .restaurant-page__plate-price-wrapper {
+.restaurant-page-wrapper .restaurant-page__plate-price-wrapper {
   display: flex;
   justify-content: space-between;
   font-size: 0.9em;
 }
-.restaurant-page-wrapper .restaurant-page .restaurant-page__plate-price-wrapper .restaurant-page__plate-description {
+.restaurant-page-wrapper .restaurant-page__plate-price-wrapper .restaurant-page__plate-description {
   color: #7d7d7d;
 }
-.restaurant-page-wrapper .restaurant-page .restaurant-page__plate-price-wrapper .restaurant-page__plate-price {
+.restaurant-page-wrapper .restaurant-page__plate-price-wrapper .restaurant-page__plate-price {
   font-weight: bold;
   margin-right: 10px;
 }
-.restaurant-page-wrapper .restaurant-page .restaurant-page_button-wrapper {
+.restaurant-page-wrapper .restaurant-page_button-wrapper {
   text-align: center;
   margin: 60px 0 50px 0;
 }
 @media screen and (min-width: 1366px) {
-  .restaurant-page-wrapper .restaurant-page .restaurant-page_button-wrapper {
+  .restaurant-page-wrapper .restaurant-page_button-wrapper {
     margin-top: 30px;
   }
 }
-.restaurant-page-wrapper .restaurant-page .restaurant-page_button {
+.restaurant-page-wrapper .restaurant-page_button {
   text-decoration: none;
   color: white;
-  margin: auto;
   width: 70%;
   max-width: 215px;
+  margin: auto;
+  padding: 15px 20px;
   border-radius: 50px;
-  background: linear-gradient(to top, #9356DC 0%, #FF79DA 100%);
+  background: linear-gradient(to left top, #9356DC 0%, #FF79DA 100%);
   box-shadow: 1px 3px 6px rgba(50, 50, 50, 0.35);
   transition: 0.3s;
-  padding: 15px 50px;
+  background: linear-gradient(to top, #9356DC 0%, #FF79DA 100%);
 }
-.restaurant-page-wrapper .restaurant-page .restaurant-page_button:hover {
+.restaurant-page-wrapper .restaurant-page_button a {
+  font-size: 1em;
+}
+.restaurant-page-wrapper .restaurant-page_button:hover {
   opacity: 0.8;
   box-shadow: 1px 3px 6px rgba(50, 50, 50, 0.7);
 }
