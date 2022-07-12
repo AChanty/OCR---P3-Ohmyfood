@@ -88,6 +88,29 @@ td, th {
     transform: translateY(0);
   }
 }
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-45deg) scale(0.8);
+  }
+  50% {
+    transform: rotate(405deg) scale(1.3);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader-opacity {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -787,30 +810,6 @@ footer .footer__content li:nth-child(2) i {
   animation: loader-opacity 250ms 2s forwards;
   opacity: 1;
   z-index: 1;
-}
-
-@keyframes loader {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(-45deg) scale(1.1);
-  }
-  50% {
-    transform: rotate(405deg) scale(1.3);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes loader-opacity {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    z-index: -1;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
