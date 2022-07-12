@@ -538,7 +538,7 @@ footer {
   @include heartgrow;
 }
 
-@for $i from 1 to 5 { // menu animation
+@for $i from 1 through 4 { // menu animation
   .restaurant-page__plate:nth-child(#{$i}) {
       animation-name: fadein;
       animation-duration: 2s;
