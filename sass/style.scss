@@ -4,6 +4,7 @@
 @import "libs/mixins.scss";
 @import "libs/responsive.scss";
 @import "components/button.scss";
+@import "utils/animations.scss";
 
 body {
   font-family: $texts;
@@ -533,46 +534,6 @@ footer {
   }
 }
 
-
-/*.fa-heart {
-  transition: transform 450ms, color 300ms 150ms; // durée + delai
-    &:hover {
-    transform: scale(5, 3) !important;
-    transform: translate(100%, -50%) !important;
-    color: red !important;
-  }
-}*/
-
-.fa-heart {
-  &:hover {
-  content: url(images/heart-solid.svg);
-  width: 16px;
-  transform: scale(1.4, 1.7);
-  cursor: pointer;
-  animation: heartgrow ease-in-out .3s;
-  transform-origin: center;
-  }
-}
-
-@keyframes heartbeat {
-  0% { transform: scale(1.4, 1.7); }
-  25% { transform: scale(0.5, 0.5); }
-  50% { transform: scale(1.4, 1.7); }
-  75% { transform: scale(1, 1); }
-  100% { transform: scale(1.4, 1.7); }
-}
-
-@keyframes heartpop {
-  0% { transform: translate(0, 0); }
-  25% { transform: translate(0, 25%); }
-  50% { transform: translate (0, 50%); }
-  75% { transform: translate (0, 75%); }
-  100% { transform: translate (0, 100%); }
-}
-
-@keyframes heartgrow {
-  0% { transform: scale(0.5); }
-  50% { transform: scale(0.9, 1.1); }
-  80% { transform: scale(2, 2.3); }
-  100% { transform: scale(1.4, 1.7); }
+.fa-heart { // heart animation
+  @include heartgrow2;
 }

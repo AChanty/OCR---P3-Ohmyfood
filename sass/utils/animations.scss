@@ -1,0 +1,48 @@
+@keyframes heartgrow {
+    0% { transform: scale(0.5); }
+    50% { transform: scale(0.9, 1.1); }
+    80% { transform: scale(2, 2.3); }
+    100% { transform: scale(1.4, 1.7); }
+}
+  
+@keyframes heartgrow2 {
+    0% { transform: scale(1, 0); }
+    25% { transform: scale(1, 1.1); }
+    50% { transform: scale(1, 1.2); }
+    75% { transform: scale(1, 1.1); }
+    100% { transform: scale(1, 1); }
+}
+
+@mixin heartgrow {
+    position: relative;
+    &:hover::after {
+    animation: heartgrow ease-in-out .3s;
+    content: url(images/heart-solid.svg);
+    width: 1em;
+    cursor: pointer;
+    transform-origin: bottom;
+    position: absolute;
+    left: 0;
+    opacity: 1;
+    }
+    &:hover::before {
+      opacity: 0;
+    }
+}
+
+@mixin heartgrow2 {
+    position: relative;
+    &:hover::after {
+    animation: heartgrow2 ease-in-out .3s;
+    content: url(images/heart-solid.svg);
+    width: 1em;
+    cursor: pointer;
+    transform-origin: bottom;
+    position: absolute;
+    left: 0;
+    opacity: 1;
+    }
+    &:hover::before {
+      opacity: 0;
+    }
+}
