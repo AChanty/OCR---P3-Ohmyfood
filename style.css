@@ -611,9 +611,13 @@ a:visited {
 }
 .restaurant-page-wrapper .restaurant-page__label-wrapper {
   margin-bottom: 20px;
-  max-width: 660px;
-  margin-left: auto;
-  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .restaurant-page-wrapper .restaurant-page__label-wrapper {
+    max-width: 660px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .restaurant-page-wrapper .restaurant-page__label-wrapper span::before {
   content: " ";
