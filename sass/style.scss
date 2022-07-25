@@ -89,6 +89,7 @@ a:visited {
       }
 
       &__button {
+      white-space: nowrap;
       @include button;
     }
     }
@@ -135,6 +136,7 @@ a:visited {
     }
 
     &__steps__item {
+      display: flex;
       margin: auto;
       max-width: 350px;
       background: #f6f6f6;
@@ -177,7 +179,7 @@ a:visited {
       i {
         color: $color-quatenary;
         font-size: 1.2em;
-        margin: 0 35px;
+        margin: 0 27px 0 36px;
 
         @include medium-screen {
           margin-left: 25px;
