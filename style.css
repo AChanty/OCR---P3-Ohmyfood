@@ -725,6 +725,7 @@ a:visited {
 .restaurant-page-wrapper .restaurant-page__plate-description-text {
   width: 100%;
   margin-left: 10px;
+  overflow: hidden;
 }
 @media screen and (min-width: 768px) {
   .restaurant-page-wrapper .restaurant-page__plate-description-text {
