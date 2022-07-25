@@ -391,9 +391,14 @@ a:visited {
 
       h1 {
         font-size: 1.7em;
+        width: 80%;
 
+        @include medium-screen {
+          width: 100%;
+        }
         @include large-screen {
           font-size: 2em;
+          width: 100%;
         }
       }
       i {
@@ -409,18 +414,20 @@ a:visited {
     &__label-wrapper {
       margin-bottom: 20px;
 
-      @include medium-screen {
-        max-width: 660px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
       span::before {
         content: " ";
         height: 3px;
         width: 40px;
         background-color: $color-tertiary;
         position: absolute;
+      }
+      @include medium-screen {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      @include large-screen {
+        width: 100%;
       }
     }
 
@@ -437,17 +444,122 @@ a:visited {
     }
 
     &__plate {
+      background: white;
+      border-radius: 15px;
+      display: flex;
+      overflow: hidden; // cacher checkbox hors du conteneur
+      width: 100%;
+      box-shadow: 1px 6px 6px rgba(50, 50, 50, 0.1);
+      margin-bottom: 15px;
+      transition: .5s;
+
+      @include medium-screen {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      @include large-screen {
+        margin-bottom: 30px;
+        width: 100%;
+      }
+    }
+
+    &__plate-description {
+      width: 100%;
+      display: flex;
+      max-width: 100%;
+      margin-bottom: 9px;
+      overflow: hidden;
+    }
+
+    &__plate-description-text {
+      width: 100%;
+      margin-left: 10px;
+    
+      @include medium-screen {
+        margin-left: 20px;
+      }
+    }
+
+    &__plate-name {
+      margin: 8px 0 0 0;
+      font-weight: bold;
+      font-size: 1.1em;
+      line-height: 1.5em;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    
+      @include medium-screen {
+        margin: 16px 0 0 0;
+      }
+     }
+
+     &__plate-infos {
+      margin-bottom: 3px;
+      color: $color-quatenary;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      font-size: 0.9em;
+    
+      @include medium-screen {
+        margin-bottom: 9px;
+      }
+    }
+
+    &__plate-price-wrapper {
+      display: flex;
+      align-items: flex-end;
+      margin-bottom: 3px;
+      margin-right: 9px;
+      font-size: 0.9em;
+
+      @include medium-screen {
+        margin-bottom: 9px;
+      }
+    }
+    
+    &__plate-price {
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    &__check-wrapper {
+      width: 30%;
+      background: $color-tertiary;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: -30%;
+      transition: .5s ease;
+    
+      i {
+        color: $color-tertiary;
+        padding: 8px;
+        border-radius: 50%;
+        background: white;
+        transition-duration: .5s;
+      }
+    }
+
+    &__plate:hover .restaurant-page__check-wrapper {
+      margin-right: 0;
+      transition: .5s ease;
+    }
+    
+    &__plate:hover i {
+      transform: rotate(360deg);
+      transition: .5s;
+    }
+  /*    &__plate {
       background-color: white;
       padding: 11px 10px 11px 20px;
       border-radius: 15px;
       box-shadow: 1px 6px 6px rgba(50, 50, 50, 0.1);
       margin-bottom: 15px;
-
-      @include medium-screen {
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 660px;
-      }
+      width: 100%;
+      transition: .5s;
 
       @include large-screen {
         margin-bottom: 30px;
@@ -459,6 +571,9 @@ a:visited {
       font-weight: bold;
       font-size: 1.1em;
       line-height: 1.5em;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
     }
 
     &__plate-price-wrapper {
@@ -468,13 +583,17 @@ a:visited {
 
       .restaurant-page__plate-description {
         color: $color-quatenary;
+
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
       }
 
       .restaurant-page__plate-price {
         font-weight: bold;
         margin-right: 10px;
       }
-    }
+    } */
 
     &_button-wrapper {
       text-align: center;
@@ -590,3 +709,69 @@ footer {
   opacity: 1;
   z-index: 1;
 }
+
+
+
+
+
+
+
+/* 
+    checkbox à droite du bloc plat, dans un bloc à part
+
+.restaurant-page__plate-general {
+  display: flex;
+
+  @include medium-screen {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include large-screen {
+    width: 100%;
+  }
+  }
+
+.restaurant-page__check-wrapper {
+  background: $color-tertiary;
+  width: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 15px 15px 0;
+  box-shadow: 1px 6px 6px rgba(50, 50, 50, 0.1);
+  transition: .5s;
+  height: 67px;
+  
+  @include large-screen {
+    height: 86px;
+  }
+
+
+  i {
+    color: $color-tertiary;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background: white;
+    opacity: 0;
+  }
+  }
+
+.restaurant-page__plate-general:hover {
+  .restaurant-page__check-wrapper {
+  width: 20%;
+  transition: .5s;
+
+  i {
+    opacity: 1;
+    transform: rotate(360deg);
+    transition-duration: 0.9s;
+  }
+  }
+  .restaurant-page__plate {
+  width: 80%;
+  transition: .5s;
+  border-radius: 15px 0 0 15px;
+  }
+  }
+*/

@@ -44,6 +44,25 @@ td, th {
   padding: 0;
 }
 
+@-webkit-keyframes heartgrow {
+  0% {
+    transform: scale(0.4);
+    opacity: 0.1;
+  }
+  50% {
+    transform: scale(0.6);
+    opacity: 0.3;
+  }
+  80% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+}
+
 @keyframes heartgrow {
   0% {
     transform: scale(0.4);
@@ -60,6 +79,23 @@ td, th {
   100% {
     transform: scale(1.2);
     opacity: 0.7;
+  }
+}
+@-webkit-keyframes heartgrow2 {
+  0% {
+    transform: scale(1, 0);
+  }
+  25% {
+    transform: scale(1, 1.1);
+  }
+  50% {
+    transform: scale(1, 1.2);
+  }
+  75% {
+    transform: scale(1, 1.1);
+  }
+  100% {
+    transform: scale(1, 1);
   }
 }
 @keyframes heartgrow2 {
@@ -79,6 +115,16 @@ td, th {
     transform: scale(1, 1);
   }
 }
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 @keyframes fadein {
   from {
     opacity: 0;
@@ -87,6 +133,20 @@ td, th {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@-webkit-keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-45deg) scale(0.8);
+  }
+  50% {
+    transform: rotate(405deg) scale(1.3);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 @keyframes loader {
@@ -101,6 +161,15 @@ td, th {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes loader-opacity {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
   }
 }
 @keyframes loader-opacity {
@@ -410,7 +479,8 @@ a:visited {
   border-radius: 15px 15px 0 0;
   width: 100%;
   height: 175px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: relative;
 }
 .restaurants-wrapper .restaurants__item span {
@@ -867,7 +937,8 @@ footer .footer__content li:nth-child(2) i {
   position: relative;
 }
 .fa-heart:hover::after {
-  animation: heartgrow ease-in-out 0.3s;
+  -webkit-animation: heartgrow ease-in-out 0.3s;
+          animation: heartgrow ease-in-out 0.3s;
   content: url(images/heart-solid.svg);
   width: 1em;
   cursor: pointer;
@@ -881,31 +952,47 @@ footer .footer__content li:nth-child(2) i {
 }
 
 .restaurant-page__plate:nth-child(1) {
-  animation-name: fadein;
-  animation-duration: 2s;
-  animation-fill-mode: both;
-  animation-delay: 0.2s;
+  -webkit-animation-name: fadein;
+          animation-name: fadein;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
 }
 
 .restaurant-page__plate:nth-child(2) {
-  animation-name: fadein;
-  animation-duration: 2s;
-  animation-fill-mode: both;
-  animation-delay: 0.4s;
+  -webkit-animation-name: fadein;
+          animation-name: fadein;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 
 .restaurant-page__plate:nth-child(3) {
-  animation-name: fadein;
-  animation-duration: 2s;
-  animation-fill-mode: both;
-  animation-delay: 0.6s;
+  -webkit-animation-name: fadein;
+          animation-name: fadein;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
 }
 
 .restaurant-page__plate:nth-child(4) {
-  animation-name: fadein;
-  animation-duration: 2s;
-  animation-fill-mode: both;
-  animation-delay: 0.8s;
+  -webkit-animation-name: fadein;
+          animation-name: fadein;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
 }
 
 /*.restaurant-page__plate:nth-child(1) {
@@ -925,7 +1012,8 @@ footer .footer__content li:nth-child(2) i {
   width: 196px;
   height: 34px;
   background-image: url(images/logo/ohmyfood@2x-spinner.svg);
-  animation: loader 1.5s ease;
+  -webkit-animation: loader 1.5s ease;
+          animation: loader 1.5s ease;
 }
 
 .loader-wrapper {
@@ -938,7 +1026,8 @@ footer .footer__content li:nth-child(2) i {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: loader-opacity 250ms 2s forwards;
+  -webkit-animation: loader-opacity 250ms 2s forwards;
+          animation: loader-opacity 250ms 2s forwards;
   opacity: 1;
   z-index: 1;
 }
@@ -1001,6 +1090,4 @@ footer .footer__content li:nth-child(2) i {
   border-radius: 15px 0 0 15px;
   }
   }
-*/
-
-/*# sourceMappingURL=style.css.map */
+*//*# sourceMappingURL=style.css.map */
