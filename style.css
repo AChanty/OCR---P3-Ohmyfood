@@ -147,7 +147,7 @@ a:visited {
   }
 }
 .header__area-wrapper {
-  margin-top: 5px; /* allows .header__logo-wrapper box-shadow */
+  margin-top: 5px;
 }
 .header__area {
   background: #eaeaea;
@@ -575,48 +575,6 @@ a:visited {
 .restaurant-page-wrapper .restaurant-page {
   width: 90%;
   margin: auto;
-  /*    &__plate {
-      background-color: white;
-      padding: 11px 10px 11px 20px;
-      border-radius: 15px;
-      box-shadow: 1px 6px 6px rgba(50, 50, 50, 0.1);
-      margin-bottom: 15px;
-      width: 100%;
-      transition: .5s;
-
-      @include large-screen {
-        margin-bottom: 30px;
-        padding: 20px 15px 20px 25px;
-      }
-    }
-
-    &__plate-name {
-      font-weight: bold;
-      font-size: 1.1em;
-      line-height: 1.5em;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      overflow: hidden;
-    }
-
-    &__plate-price-wrapper {
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.9em;
-
-      .restaurant-page__plate-description {
-        color: $color-quatenary;
-
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
-      }
-
-      .restaurant-page__plate-price {
-        font-weight: bold;
-        margin-right: 10px;
-      }
-    } */
 }
 @media screen and (min-width: 1366px) {
   .restaurant-page-wrapper .restaurant-page__menus-wrapper {
