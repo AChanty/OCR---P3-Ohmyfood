@@ -754,20 +754,20 @@ a:visited {
   margin-right: 0;
   transition: 0.5s ease;
 }
-.restaurant-page-wrapper .restaurant-page__plate:hover i {
+.restaurant-page-wrapper .restaurant-page__plate:hover .fa-check {
   transform: rotate(360deg);
   transition: 0.5s;
 }
-.restaurant-page-wrapper .restaurant-page_button-wrapper {
+.restaurant-page-wrapper .restaurant-page__button-wrapper {
   text-align: center;
   margin: 60px 0 50px 0;
 }
 @media screen and (min-width: 1366px) {
-  .restaurant-page-wrapper .restaurant-page_button-wrapper {
+  .restaurant-page-wrapper .restaurant-page__button-wrapper {
     margin-top: 30px;
   }
 }
-.restaurant-page-wrapper .restaurant-page_button {
+.restaurant-page-wrapper .restaurant-page__button-wrapper__button {
   text-decoration: none;
   color: white;
   width: 70%;
@@ -780,10 +780,10 @@ a:visited {
   transition: 0.3s;
   background: linear-gradient(to top, #9356DC 0%, #FF79DA 100%);
 }
-.restaurant-page-wrapper .restaurant-page_button a {
+.restaurant-page-wrapper .restaurant-page__button-wrapper__button a {
   font-size: 1em;
 }
-.restaurant-page-wrapper .restaurant-page_button:hover {
+.restaurant-page-wrapper .restaurant-page__button-wrapper__button:hover {
   opacity: 0.8;
   box-shadow: 1px 3px 6px rgba(50, 50, 50, 0.7);
 }

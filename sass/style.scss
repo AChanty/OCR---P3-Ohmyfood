@@ -546,32 +546,33 @@ a:visited {
       }
     }
 
-    &__plate:hover .restaurant-page__check-wrapper {
+    &__plate:hover  {
+      .restaurant-page__check-wrapper {
       margin-right: 0;
       transition: 0.5s ease;
-    }
+      }
 
-    &__plate:hover i {
+      .fa-check {
       transform: rotate(360deg);
       transition: 0.5s;
+      }
     }
 
-    &_button-wrapper {
+    &__button-wrapper {
       text-align: center;
       margin: 60px 0 50px 0;
 
       @include large-screen {
         margin-top: 30px;
       }
-    }
-
-    &_button {
-      @include button;
-      background: linear-gradient(
-        to top,
-        $color-primary 0%,
-        $color-secondary 100%
-      );
+      &__button {
+        @include button;
+        background: linear-gradient(
+          to top,
+          $color-primary 0%,
+          $color-secondary 100%
+        );
+      }
     }
   }
 }
