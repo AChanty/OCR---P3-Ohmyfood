@@ -1,10 +1,10 @@
-@import "libs/reset.scss";
-@import "libs/variables.scss";
-@import "utils/fonts.scss";
-@import "libs/mixins.scss";
-@import "libs/responsive.scss";
-@import "components/button.scss";
-@import "utils/animations.scss";
+@import "libs/__reset.scss";
+@import "libs/__variables.scss";
+@import "utils/__fonts.scss";
+@import "libs/__mixins.scss";
+@import "libs/__responsive.scss";
+@import "components/__button.scss";
+@import "utils/__animations.scss";
 
 body {
   font-family: $texts;
