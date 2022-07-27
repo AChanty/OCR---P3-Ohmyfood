@@ -750,7 +750,7 @@ a:visited {
 }
 .restaurant-page-wrapper .restaurant-page__check-wrapper i {
   color: #99E2D0;
-  padding: 8px;
+  padding: 5px;
   border-radius: 50%;
   background: white;
   transition-duration: 0.5s;
