@@ -755,6 +755,9 @@ a:visited {
   background: white;
   transition-duration: 0.5s;
 }
+.restaurant-page-wrapper .restaurant-page__plate:hover {
+  cursor: pointer;
+}
 .restaurant-page-wrapper .restaurant-page__plate:hover .restaurant-page__check-wrapper {
   margin-right: 0;
   transition: 0.5s ease;

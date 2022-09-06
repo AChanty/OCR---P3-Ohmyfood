@@ -552,6 +552,8 @@ a:visited {
     }
 
     &__plate:hover  {
+      cursor: pointer;
+
       .restaurant-page__check-wrapper {
       margin-right: 0; // faire réapparaître checkbox en annulant -30% margin right
       transition: 0.5s ease;
